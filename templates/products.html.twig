@@ -478,6 +478,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
             </div>
 
 
+
             <div class="col-sm-8 col-lg-3 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0">
                 <ul class="d-flex justify-content-end list-unstyled m-0">
                     <!-- Trigger Button for Sign In -->
@@ -514,8 +515,8 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                                     {% endif %}
                                     <form action="/verif_log" method="post">
                                         <div class="mb-3">
-                                            <label for="emailOrPhone" class="form-label">E-mail Address</label>
-                                            <input type="text" name="email" class="form-control" id="emailOrPhone" placeholder="Enter your email" required>
+                                            <label for="emailOrPhone" class="form-label">Adresse email</label>
+                                            <input type="text" name="email" class="form-control" id="emailOrPhone" placeholder="Entrez votre email" required>
                                         </div>
                                         <div class="mb-3">
                                             <label for="password" class="form-label">Password</label>
@@ -523,20 +524,22 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                                         </div>
                                         <button type="submit" class="btn btn-primary w-100">Sign In</button>
                                     </form>
+                                    <br>
+                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#createAccountModal">
+                                        créer un compte
+                                    </button>
                                 </div>
-                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#createAccountModal">
-                                    Register
-                                </button>
+
                             </div>
                         </div>
                     </div>
 
-                    <!-- Create Account Modal -->
+                    <!-- Créer un compte Modal -->
                     <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="createAccountModalLabel">Create Account</h5>
+                                    <h5 class="modal-title" id="createAccountModalLabel">Créer un compte</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -544,34 +547,33 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                                         <input type="hidden" name="_token" value="{{ csrf_token('register_form') }}">
 
                                         <div class="mb-3">
-                                            <label for="userName" class="form-label fw-bold">Your Name</label>
-                                            <input type="text" class="form-control" name="userName" id="userName" placeholder="First and last name" required>
+                                            <label for="userName" class="form-label fw-bold">Votre nom</label>
+                                            <input type="text" class="form-control" name="userName" id="userName" placeholder="Nom et prénom" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="newEmail" class="form-label fw-bold">E-mail Address</label>
-                                            <input type="email" class="form-control" name="newEmail" id="newEmail" placeholder="Enter your email" required>
+                                            <label for="newEmail" class="form-label fw-bold">Adresse email</label>
+                                            <input type="email" class="form-control" name="newEmail" id="newEmail" placeholder="Entrez votre email" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="Password" class="form-label fw-bold">Password</label>
-                                            <input type="password" class="form-control" name="Password" id="Password" placeholder="At least 6 characters" minlength="6" required>
-                                            <div class="form-text">Passwords must be at least 6 characters long.</div>
+                                            <label for="Password" class="form-label fw-bold">Mot de passe</label>
+                                            <input type="password" class="form-control" name="Password" id="Password" placeholder="Au moins 6 caractères" minlength="6" required>
+                                            <div class="form-text">Les mots de passe doivent comporter au moins 6 caractères.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="confirmPassword" class="form-label fw-bold">Confirm Password</label>
-                                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="" required>
+                                            <label for="confirmPassword" class="form-label fw-bold">Confirmez le mot de passe</label>
+                                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="même mot de passe" required>
                                         </div>
-                                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                                        <button type="submit" class="btn btn-primary w-100">Créer un compte</button>
                                     </form>
                                     <div class="text-center mt-3">
-                                        <p>Already have an account?
-                                            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signInModal" data-bs-dismiss="modal">Sign In</a>
+                                        <p>Vous avez déjà un compte ?
+                                            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signInModal" data-bs-dismiss="modal">Se connecter</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Additional Buttons for Cart and Search (Mobile View) -->
                     <li class="d-lg-none">
                         <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
