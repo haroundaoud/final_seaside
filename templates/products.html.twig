@@ -479,22 +479,28 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
 
 
 
-            <div class="col-sm-8 col-lg-3 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0">
+
+            <div class="col-sm-8 col-lg-3 d-flex justify-content-end gap-15 align-items-center mt-21 mt-sm-0 lh-12">
                 <ul class="d-flex justify-content-end list-unstyled m-0">
                     <!-- Trigger Button for Sign In -->
                     <li>
-                        <div class="compte text-end d-none d-lg-block">
-                            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
-    <span class="fs-6 text-muted">
-      <i class="bi bi-person fs-5"></i> Compte
-    </span>
+                        <div class="compte text-end d-none d-lg-block px-5 ">
+                            <button class="border-0 bg-transparent d-flex align-items-center gap-2 px-1 py-2 rounded-3 " type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+                                <i class="bi bi-person-circle fs-4 gap-2 lh-12" ></i>
+                                <span class="fw-medium">Mon Compte</span>
                             </button>
                         </div>
 
                         {% if app.session.get('username') %}
-                            <div class="d-flex align-items-center mt-2">
-                                <span class="fw-bold ms-2">{{ app.session.get('username') }}</span>
-                                <a href="{{ path('app_logout') }}" class="btn btn-danger ms-3">Log Out</a>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-2 bg-light px-3 py-2 rounded-3">
+                                    <i class="bi bi-person-check-fill text-primary"></i>
+                                    <span class="fw-semibold">{{ app.session.get('username') }}</span>
+                                </div>
+                                <a href="{{ path('app_logout') }}" class="btn btn-outline-danger d-flex align-items-center gap-2">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Déconnexion</span>
+                                </a>
                             </div>
                         {% endif %}
                     </li>
