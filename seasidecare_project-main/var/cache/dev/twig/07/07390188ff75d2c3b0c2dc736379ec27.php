@@ -1,0 +1,5378 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+use Twig\TemplateWrapper;
+
+/* index.html.twig */
+class __TwigTemplate_3d6ebb8ac996ceaba5c7dbc7589006fb extends Template
+{
+    private Source $source;
+    /**
+     * @var array<string, Template>
+     */
+    private array $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "index.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "index.html.twig"));
+
+        // line 1
+        yield "<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <title>parapharmacie</title>
+  <meta charset=\"utf-8\">
+  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+  <meta name=\"format-detection\" content=\"telephone=no\">
+  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+  <meta name=\"author\" content=\"\">
+  <meta name=\"keywords\" content=\"\">
+  <meta name=\"description\" content=\"\">
+  <link href=\"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap\" rel=\"stylesheet\">
+  <link rel=\"icon\" type=\"image/png\" href=\"images/lf.png\">
+
+  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css\">
+  <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ\" crossorigin=\"anonymous\">
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 18
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/vendor.css"), "html", null, true);
+        yield "\">
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 19
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css1/style.css"), "html", null, true);
+        yield "\">
+  <link href=\"css1/fontawesome.min.css\" rel=\"stylesheet\" type=\"text/css\" />
+  <link href=\"css1/jquery.nice-number.css\" rel=\"stylesheet\" type=\"text/css\" />
+  <link href=\"css1/slick.css\" rel=\"stylesheet\" type=\"text/css\" />
+
+
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 25
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("style.css"), "html", null, true);
+        yield "\">
+
+  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+  <link href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap\" rel=\"stylesheet\">
+  <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\">
+  <style>
+
+    /*first slide*/
+
+    .carousel-inner{
+      height: auto;
+
+      border-radius: 20px;
+
+    }
+    .carousel-caption {
+      bottom: 100%;
+      transform: translate(0, 50%);
+    }
+
+    .carousel-caption h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Responsive */
+
+    @media (min-width: 992px) {
+
+      .carousel-caption h5 {
+        font-size: 4rem;
+      }
+    }
+
+    /* Style for the carousel control button */
+
+
+    /* Next icon design */
+    .carousel-control-next-icon {
+
+      background-color: #13afa7;
+
+    }
+
+    .carousel-control-prev-icon {
+      background-color:#13afa7;
+
+    }
+
+    /**********************************************/
+
+    /***** just for card name and client */
+    .card-client {
+      background: #1DBF72;
+
+      border: 4px solid #7cdacc;
+      box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+      border-radius: 10px;
+      color: #fff;
+      font-family: \"Poppins\", sans-serif;
+      transition: all 0.3s ease;
+
+      padding-top: 20px;
+    }
+    .card-client:hover {
+      transform: translateY(-10px);
+    }
+    .name-client {
+      text-align: left;
+      margin: 0;
+      margin-top: -20px;
+      font-weight: 600;
+      font-size: 18px;
+      padding-left: 15px;
+      padding-bottom: 50px;
+
+    }
+
+    .name-client span {
+      display: block;
+      font-weight: 400;
+      font-size: 18px; /* Adjust for readability */
+      white-space: normal; /* Ensures wrapping */
+      word-wrap: break-word; /* Breaks long words */
+      line-height: 1.4; /* Increases readability */
+      max-width: 100%; /* Prevents overflow */
+    }
+    /*********************************************************/
+
+
+    /*footer design*/
+    /* General Styles */
+    html,
+    body{
+      height: 100%;
+      font-family: \"Nunito Sans\" , sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    p{
+      font-size: 15px;
+      font-family: \"Nunito Sans\" , sans-serif ;
+      color: #3d3d3d;
+      font-weight: 400;
+      line-height: 25px;
+      margin: 0 0 15px 0;
+    }
+    img{
+      max-width: 100%;
+    }
+    a{
+      text-decoration: none;
+    }
+    ul{
+      padding-left: 0;
+    }
+
+    input:focus{
+      outline: none;
+    }
+    a:hover,
+    a:focus{
+      text-decoration: none;
+      outline: none;
+      color: #ffffff;
+    }
+
+
+    .footer{
+      background: #00453c;
+      padding-top: 70px;
+    }
+    .footer-about{
+      margin-bottom: 30px;
+    }
+    .footer-about .footer-logo{
+      margin-bottom: 30px;
+    }
+    .footer-about p{
+      color: #b7b7b7;
+      margin-bottom: 30px;
+    }
+    .footer-widget{
+      margin-bottom: 30px;
+    }
+    .footer-widget h6{
+      color:  #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .footer-widget ul li{
+      line-height: 36px;
+      list-style: none;
+    }
+    .footer-widget ul li a{
+      color: #b7b7b7;
+      font-size: 15px;
+    }
+    .footer-widget ul li a:hover{
+      color: #e53637;
+    }
+    .footer-widget .footer-newslatter p{
+      color: #b7b7b7;
+    }
+    .footer-widget .footer-newslatter form{
+      position: relative;
+    }
+    .footer-widget .footer-newslatter form input{
+      width: 100%;
+      font-size: 15px;
+      color: #ffffff;
+      background: transparent;
+      border: none;
+      padding: 15px 0;
+      border-bottom: 2px solid #ffffff;
+    }
+    .footer-widget .footer-newslatter form input::placeholder{
+      color: #b7b7b7;
+    }
+    .footer-widget .footer-newslatter form button{
+      color: #b7b7b7;
+      font-size: 16px;
+      position: absolute;
+      right: 5px;
+      top: 0;
+      height: 100%;
+      background: transparent;
+      border: none;
+    }
+    .footer-copyright-text{
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .footer-copyright-text p{
+      color: #b7b7b7;
+      margin-bottom: 0;
+    }
+    .footer-copyright-text p i{
+      color: #e53637;
+    }
+    .footer-copyright-text p a{
+      color: #e53637;
+    }
+
+
+    /************************************/
+
+    /*read more design*/
+
+
+    /* Ensuring card body has consistent height */
+    .post-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card-body {
+      flex-grow: 1;  /* Ensures content can expand, but the card stays the same size */
+    }
+
+    .card {
+      height: 100%;  /* Makes the card expand fully within the container */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .read-more {
+      color: white;
+      background-color: #13afa7;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      background-color: #0e7f7b;  /* Slightly darker shade on hover */
+      transform: scale(1.05);  /* Slight zoom effect */
+    }
+
+    .read-more:focus {
+      outline: 3px solid #0e7f7b;  /* Focus outline for accessibility */
+    }
+
+
+    /* Optional: Adjust the height of each card to be the same */
+    .post-item {
+      min-height: 350px; /* Adjust this value based on your design needs */
+    }
+
+
+
+    /**************************************/
+
+
+
+
+  </style>
+</head>
+<body>
+
+<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">
+  <defs>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"link\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"arrow-right\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"category\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"calendar\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"heart\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"plus\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"minus\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"cart\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"check\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"trash\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"star-outline\" viewBox=\"0 0 15 15\">
+      <path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"star-solid\" viewBox=\"0 0 15 15\">
+      <path fill=\"currentColor\" d=\"M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"search\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"user\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"close\" viewBox=\"0 0 15 15\">
+      <path fill=\"currentColor\" d=\"M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z\"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class=\"preloader-wrapper\">
+  <div class=\"preloader\">
+  </div>
+</div>
+
+<div class=\"offcanvas offcanvas-end\" data-bs-scroll=\"true\" tabindex=\"-1\" id=\"offcanvasCart\" aria-labelledby=\"MyCart\">
+  <div class=\"offcanvas-header justify-content-center border-bottom\">
+    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+  </div>
+
+  <div class=\"offcanvas-body\">
+    <!-- Cart Header with Icon -->
+    <div class=\"d-flex justify-content-between align-items-center mb-4\">
+      <div class=\"loader\">
+        <div class=\"truckWrapper\">
+          <div class=\"truckBody\">
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 198 93\"
+                    class=\"trucksvg\"
+            >
+              <path
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#F83D3D\"
+                      d=\"M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z\"
+              ></path>
+              <path
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#7D7C7C\"
+                      d=\"M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z\"
+              ></path>
+              <path
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      d=\"M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z\"
+              ></path>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#FFFCAB\"
+                      rx=\"1\"
+                      height=\"7\"
+                      width=\"5\"
+                      y=\"63\"
+                      x=\"187\"
+              ></rect>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      rx=\"1\"
+                      height=\"11\"
+                      width=\"4\"
+                      y=\"81\"
+                      x=\"193\"
+              ></rect>
+              <rect
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#DFDFDF\"
+                      rx=\"2.5\"
+                      height=\"90\"
+                      width=\"121\"
+                      y=\"1.5\"
+                      x=\"6.5\"
+              ></rect>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#DFDFDF\"
+                      rx=\"2\"
+                      height=\"4\"
+                      width=\"6\"
+                      y=\"84\"
+                      x=\"1\"
+              ></rect>
+            </svg>
+          </div>
+          <div class=\"truckTires\">
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 30 30\"
+                    class=\"tiresvg\"
+            >
+              <circle
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      r=\"13.5\"
+                      cy=\"15\"
+                      cx=\"15\"
+              ></circle>
+              <circle fill=\"#DFDFDF\" r=\"7\" cy=\"15\" cx=\"15\"></circle>
+            </svg>
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 30 30\"
+                    class=\"tiresvg\"
+            >
+              <circle
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      r=\"13.5\"
+                      cy=\"15\"
+                      cx=\"15\"
+              ></circle>
+              <circle fill=\"#DFDFDF\" r=\"7\" cy=\"15\" cx=\"15\"></circle>
+            </svg>
+          </div>
+          <div class=\"road\"></div>
+
+          <svg
+                  xml:space=\"preserve\"
+                  viewBox=\"0 0 453.459 453.459\"
+                  xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+                  xmlns=\"http://www.w3.org/2000/svg\"
+                  id=\"Capa_1\"
+                  version=\"1.1\"
+                  fill=\"#000000\"
+                  class=\"lampPost\"
+          >
+      <path
+              d=\"M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+h78.747C231.693,100.736,232.77,106.162,232.77,111.694z\"
+      ></path>
+    </svg>
+        </div>
+      </div>
+
+      <span class=\"badge bg-primary rounded-pill\">0</span>
+
+    </div>
+
+    <!-- Optional Custom CSS for Animation -->
+
+
+
+    <!-- Cart Items List -->
+    <ul class=\"list-group mb-4\">
+      <li class=\"list-group-item d-flex justify-content-between align-items-center border-0 rounded-3 shadow-sm bg-light\">
+        <div class=\"d-flex align-items-center\">
+          <!-- Product Image -->
+          <span class=\"fw-bold text-uppercase text-dark\">Total</span>
+        </div>
+
+        <div class=\"d-flex align-items-center\">
+          <strong class=\"display-6 text-primary ms-2\">0 TND</strong>
+        </div>
+      </li>
+    </ul>
+
+
+    <!-- Action Buttons -->
+    <div class=\"d-grid gap-2 mb-4\">
+      <button id=\"checkout-button\" class=\"btn btn-dark\">Voir le Panier</button>
+    </div>
+
+    <div class=\"d-grid gap-2\">
+      <button class=\"btn btn-outline-danger\" id=\"clear-cart\">Vider le Panier</button>
+    </div>
+
+    <!-- Optional Footer for Cart -->
+    <div class=\"offcanvas-footer mt-4 text-center\">
+      <small>Une fois que vous êtes prêt, procédez au paiement.</small>
+    </div>
+  </div>
+</div>
+
+<!-- Optional Smooth Animations for Open/Close -->
+
+
+<!-- Optional Custom CSS to refine the look -->
+
+
+<!-- Bootstrap Icons (Ensure you have Bootstrap Icons CDN included in your project) -->
+<link href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+
+<div class=\"offcanvas offcanvas-end\" data-bs-scroll=\"true\" tabindex=\"-1\" id=\"offcanvasSearch\" aria-labelledby=\"Search\">
+  <div class=\"offcanvas-header justify-content-center\">
+    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+  </div>
+  <div class=\"offcanvas-body\">
+    <div class=\"order-md-last\">
+      <h4 class=\"d-flex justify-content-between align-items-center mb-3\">
+        <span class=\"text-primary\">Rechercher</span>
+      </h4>
+      <form role=\"search\" action=\"/home\" method=\"get\" class=\"d-flex mt-3 gap-0\">
+        <input class=\"form-control rounded-start rounded-0 bg-light\" type=\"email\" placeholder=\"What are you looking for?\" aria-label=\"What are you looking for?\">
+        <button class=\"btn btn-dark rounded-end rounded-0\" type=\"submit\">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<header>
+
+  <div class=\"header_top d-none d-md-block\">
+    <div class=\"container\">
+      <div class=\"row align-items-center\">
+        <!-- Contact Info -->
+        <div class=\"col-md-4\">
+          <ul class=\"list-unstyled m-0\">
+            <li>
+              <a href=\"#\" class=\"text-decoration-none text-white\">
+                <i class=\"fas fa-phone me-1\"></i> 216-24-006-483
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Promotion Message -->
+        <div class=\"col-md-4 text-center\">
+          <p class=\"promo_message m-0 small\">
+            <i class=\"fas fa-truck me-1\"></i> Livraison gratuite dès 99 DT d'achat !
+          </p>
+        </div>
+
+        <!-- Hours -->
+        <div class=\"col-md-4 text-end\">
+          <span class=\"time_o small\">🕒 8h00 - 18h00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=\"container-fluid\">
+    <div class=\"row py-3 border-bottom\">
+
+      <div class=\"col-sm-4 col-lg-3 text-center text-sm-start\">
+        <div class=\"main-logo\">
+          <a href=\"";
+        // line 591
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        yield "\">
+            <img src=\"";
+        // line 592
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
+        yield "\" alt=\"logo\" class=\"img-fluid\" style=\"max-width: 78%; height: auto; object-fit: contain;\">
+          </a>
+        </div>
+      </div>
+      <div class=\"col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block\">
+        <div class=\"search-bar row bg-light p-2 my-1 rounded-3 shadow-sm align-items-center\">
+          <div class=\"col-10\">
+            <form id=\"search-form\" action=\"index.html\" method=\"post\">
+              <input type=\"text\" class=\"form-control border-0 bg-transparent\" placeholder=\"Cherchez un produit\" style=\"font-size: 0.9rem; padding: 0.4rem;\">
+            </form>
+          </div>
+          <div class=\"col-2 text-center\">
+            <button type=\"submit\" form=\"search-form\" class=\"btn p-0\">
+              <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: #6c757d;\">
+                <path d=\"M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z\"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=\"col-sm-8 col-lg-3 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0\">
+        <ul class=\"d-flex justify-content-end list-unstyled m-0\">
+          <!-- Trigger Button for Sign In -->
+          <li>
+            <div class=\"compte text-end d-none d-lg-block\">
+              <button class=\"border-0 bg-transparent d-flex flex-column gap-2 lh-1\" type=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#signInModal\">
+    <span class=\"fs-6 text-muted\">
+      <i class=\"bi bi-person fs-5\"></i> Compte
+    </span>
+              </button>
+            </div>
+
+            ";
+        // line 626
+        if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 626, $this->source); })()), "session", [], "any", false, false, false, 626), "get", ["username"], "method", false, false, false, 626)) {
+            // line 627
+            yield "              <div class=\"d-flex align-items-center mt-2\">
+                <span class=\"fw-bold ms-2\">";
+            // line 628
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 628, $this->source); })()), "session", [], "any", false, false, false, 628), "get", ["username"], "method", false, false, false, 628), "html", null, true);
+            yield "</span>
+                <a href=\"";
+            // line 629
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            yield "\" class=\"btn btn-danger ms-3\">Log Out</a>
+              </div>
+            ";
+        }
+        // line 632
+        yield "          </li>
+
+          <!-- Sign In Modal -->
+          <div class=\"modal fade ";
+        // line 635
+        if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 635, $this->source); })()), "request", [], "any", false, false, false, 635), "get", ["showModal"], "method", false, false, false, 635)) {
+            yield "show";
+        }
+        yield "\" id=\"signInModal\" tabindex=\"-1\" aria-labelledby=\"signInModalLabel\" ";
+        if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 635, $this->source); })()), "request", [], "any", false, false, false, 635), "get", ["showModal"], "method", false, false, false, 635)) {
+            yield "aria-hidden=\"false\" style=\"display: block;\"";
+        } else {
+            yield "aria-hidden=\"true\" style=\"display: none;\"";
+        }
+        yield ">
+            <div class=\"modal-dialog\">
+              <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                  <h5 class=\"modal-title\" id=\"signInModalLabel\">Sign In</h5>
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                </div>
+                <div class=\"modal-body\">
+                  ";
+        // line 643
+        if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 643, $this->source); })()), "request", [], "any", false, false, false, 643), "get", ["showModal"], "method", false, false, false, 643)) {
+            // line 644
+            yield "                    <div class=\"alert alert-danger\">
+                      ";
+            // line 645
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 645, $this->source); })()), "request", [], "any", false, false, false, 645), "get", ["showModal"], "method", false, false, false, 645), "html", null, true);
+            yield "
+                    </div>
+                  ";
+        }
+        // line 648
+        yield "                  <form action=\"/verif_log\" method=\"post\">
+                    <div class=\"mb-3\">
+                      <label for=\"emailOrPhone\" class=\"form-label\">E-mail Address</label>
+                      <input type=\"text\" name=\"email\" class=\"form-control\" id=\"emailOrPhone\" placeholder=\"Enter your email\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"password\" class=\"form-label\">Password</label>
+                      <input type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Enter your password\" required>
+                    </div>
+                    <button type=\"submit\" class=\"btn btn-primary w-100\">Sign In</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Create Account Modal -->
+          <div class=\"modal fade\" id=\"createAccountModal\" tabindex=\"-1\" aria-labelledby=\"createAccountModalLabel\" aria-hidden=\"true\">
+            <div class=\"modal-dialog\">
+              <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                  <h5 class=\"modal-title\" id=\"createAccountModalLabel\">Create Account</h5>
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                </div>
+                <div class=\"modal-body\">
+                  <form>
+                    <div class=\"mb-3\">
+                      <label for=\"userName\" class=\"form-label fw-bold\">Your Name</label>
+                      <input type=\"text\" class=\"form-control\" id=\"userName\" placeholder=\"First and last name\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"newEmail\" class=\"form-label fw-bold\">E-mail Address</label>
+                      <input type=\"email\" class=\"form-control\" id=\"newEmail\" placeholder=\"Enter your email\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"Password\" class=\"form-label fw-bold\">Password</label>
+                      <input type=\"password\" class=\"form-control\" id=\"Password\" placeholder=\"At least 6 characters\" minlength=\"6\" required>
+                      <div class=\"form-text\">Passwords must be at least 6 characters long.</div>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"confirmPassword\" class=\"form-label fw-bold\">Confirm Password</label>
+                      <input type=\"password\" class=\"form-control\" id=\"confirmPassword\" placeholder=\"\" required>
+                    </div>
+                    <button type=\"submit\" class=\"btn btn-primary w-100\">Create Account</button>
+                  </form>
+                  <div class=\"text-center mt-3\">
+                    <p>Already have an account?
+                      <a href=\"#\" class=\"text-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#signInModal\" data-bs-dismiss=\"modal\">Sign In</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Buttons for Cart and Search (Mobile View) -->
+          <li class=\"d-lg-none\">
+            <a href=\"#\" class=\"rounded-circle bg-light p-2 mx-1\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasCart\" aria-controls=\"offcanvasCart\">
+              <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><use xlink:href=\"#cart\"></use></svg>
+            </a>
+          </li>
+          <li class=\"d-lg-none\">
+            <a href=\"#\" class=\"rounded-circle bg-light p-2 mx-1\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasSearch\" aria-controls=\"offcanvasSearch\">
+              <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><use xlink:href=\"#search\"></use></svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Cart (Desktop View) -->
+        <div class=\"cart text-end d-none d-lg-block\">
+          <button class=\"border-0 bg-transparent d-flex flex-column gap-2 lh-1\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasCart\" aria-controls=\"offcanvasCart\">
+    <span class=\"fs-6 text-muted position-relative\">
+      <i class=\"bi bi-cart fs-5 position-relative\">
+        <span class=\"cart-badge position-absolute top-0 start-100 translate-middle\">
+          0
+        </span>
+      </i>
+     &nbsp; Panier
+    </span>
+          </button>
+        </div>
+
+
+
+
+      </div>
+
+
+
+      <!-- c la publicité -->
+      <!-- From Uiverse.io by r0n-dev -->
+      <div class=\"div\">
+        <p id=\"h2\">Chez Seaside Care, nous mettons un point d'honneur à proposer des produits de qualité....<span id=\"lol\"></span></p>
+      </div>
+
+
+   
+
+
+
+
+
+
+      <div class=\"container-fluid\">
+        <div class=\"row py-3\">
+          <div class=\"d-flex justify-content-center justify-content-sm-between align-items-center\">
+            <nav class=\"main-menu d-flex navbar navbar-expand-lg\">
+              <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasNavbar\" aria-controls=\"offcanvasNavbar\">
+                <span class=\"navbar-toggler-icon\"></span>
+              </button>
+
+              <div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"offcanvasNavbar\" aria-labelledby=\"offcanvasNavbarLabel\">
+                <div class=\"offcanvas-header justify-content-center\">
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+                </div>
+
+                <div class=\"offcanvas-body\">
+
+
+                  <ul class=\"navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0\">
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"visageDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" >
+                        Visage
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"visageDropdown\" style=\"min-width: 1200px; border-radius: 10px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins hydratants et nourrissants</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Hydratants toutes peaux</li>
+                                <li class=\"text-muted\">Hydratants peaux normales à mixtes</li>
+                                <li class=\"text-muted\">Hydratants peaux sèches</li>
+                                <li class=\"text-muted\">Hydratants peaux intolérantes</li>
+                                <li class=\"text-muted\">Hydratants peaux atopiques</li>
+                                <li class=\"text-muted\">Soins teintés, bonne mine</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins anti-âge et anti-rides</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Premières rides</li>
+                                <li class=\"text-muted\">Rides installées</li>
+                                <li class=\"text-muted\">Rides marquées, perte de fermeté</li>
+                                <li class=\"text-muted\">Sérum Anti-âge</li>
+                                <li class=\"text-muted\">Crème peau sèche</li>
+                                <li class=\"text-muted\">Crème peau grasse</li>
+                                <li class=\"text-muted\">Soin Liftant</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Maquillage</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Rouge à lèvres</li>
+                                <li class=\"text-muted\">Vernis à ongles</li>
+                                <li class=\"text-muted\">Mascara</li>
+                                <li class=\"text-muted\">Crayon et feutre à yeux, eye liner</li>
+                                <li class=\"text-muted\">Fard à paupières</li>
+                                <li class=\"text-muted\">Fond de teint fluide</li>
+                                <li class=\"text-muted\">Poudre teint et compact</li>
+                                <li class=\"text-muted\">Correcteurs de teint</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Yeux et lèvres</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Soins anti-poches et cernes</li>
+                                <li class=\"text-muted\">Contour des yeux</li>
+                                <li class=\"text-muted\">Démaquillants yeux</li>
+                                <li class=\"text-muted\">Sticks baumes lèvres et réparateurs</li>
+                                <li class=\"text-muted\">Anti-âge yeux</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Démaquillants, nettoyants visage</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Lait, mousse, émulsion</li>
+                                <li class=\"text-muted\">Gel, crème, huile</li>
+                                <li class=\"text-muted\">Eau, tonique, lotion</li>
+                                <li class=\"text-muted\">Cotons démaquillants, lingettes et éponges</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins peau grasse, mixte et acné</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Nettoyage</li>
+                                <li class=\"text-muted\">Purifiants</li>
+                                <li class=\"text-muted\">Matifiants</li>
+                                <li class=\"text-muted\">Soins spécifiques</li>
+                                <li class=\"text-muted\">Soins teintés</li>
+                                <li class=\"text-muted\">Peaux à imperfections</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+                    <!--*************************************************************************************************-->
+
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"visageDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" >
+                        Cheveux
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"visageDropdown\" style=\"min-width: 1200px; border-radius: 10px; left: -85px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Shampoing</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Shampoing doux et fréquent</li>
+                                <li class=\"text-muted\">Shampoing antipelliculaire</li>
+                                <li class=\"text-muted\">Shampoing cheveux gras</li>
+                                <li class=\"text-muted\">Shampoing cheveux secs</li>
+                                <li class=\"text-muted\">Shampoing cheveux colorés</li>
+                                <li class=\"text-muted\">Shampoing cheveux fins, cassants</li>
+                                <li class=\"text-muted\">Shampoing anti-poux</li>
+                                <li class=\"text-muted\">Shampooing sec</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Après-shampooing, soin des cheveux</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Après-shampoing</li>
+                                <li class=\"text-muted\">Masques, baumes</li>
+                                <li class=\"text-muted\">Soins défrisant et lissant</li>
+                                <li class=\"text-muted\">Soins capillaires</li>
+                                <li class=\"text-muted\">Lotion anti-poux</li>
+                              </ul>
+
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins anti-chute</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">shampoing anti-chute</li>
+                                <li class=\"text-muted\">ampoules et lotions anti-chute</li>
+
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Huiles et sérums</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">sérums et ampoules capillaires</li>
+                                <li class=\"text-muted\">huiles capillaires</li>
+
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Kératine</span>
+                              <ul class=\"list-unstyled ps-3\">
+
+                              </ul>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Capillaire solaire</span>
+                              <ul class=\"list-unstyled ps-3\">
+
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Produits coiffants</span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Coloration</span>
+
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Compléments cheveux et ongles</span>
+
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Proteine Capillaire</span>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+                    <!--*******************************************************************************************************************************************-->
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Corps
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -180px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hydratation et nutrition corps</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">soins hydratation</li>
+                                <li class=\"text-muted\">soins hydratation peaux sèches et atopiques</li>
+                                <li class=\"text-muted\">soins hydratation anti-âge</li>
+                                <li class=\"text-muted\">soins hydratation teintés, bonne mine</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Epilation, dépilation, décoloration</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème et mousse dépilatoire</li>
+                                <li class=\"text-muted\">cire et bandes dépilatoires</li>
+                                <li class=\"text-muted\">epilateur électrique</li>
+                                <li class=\"text-muted\">soins post-épilation</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins spécifiques</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">soins apaisants</li>
+                                <li class=\"text-muted\">peaux squameuses</li>
+                                <li class=\"text-muted\">crème cicatrisante</li>
+                                <li class=\"text-muted\">soins buste et seins</li>
+                                <li class=\"text-muted\">anti cellulite</li>
+                                <li class=\"text-muted\">éclaircissant corps</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins des pieds</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">pieds secs et abîmés</li>
+                                <li class=\"text-muted\">pansements pieds et coussinets</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins des mains</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Gommage et exfoliant corps
+          </span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Jambes lourdes
+
+          </span>
+
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Articulations
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Parfum
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Massage
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins minceur
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins repigmentant
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Nettoyant
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Accessoires
+          </span>
+                            </div>
+
+
+
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+                    <!--*************************************************************************************************-->
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Bébé et maman
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -257px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Puériculture</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">biberons</li>
+                                <li class=\"text-muted\">tétines</li>
+                                <li class=\"text-muted\">sucettes</li>
+                                <li class=\"text-muted\">vaisselles de bébé</li>
+                                <li class=\"text-muted\">anneaux de dentitions</li>
+                                <li class=\"text-muted\">accessoires</li>
+                                <li class=\"text-muted\">lunettes</li>
+                              </ul>
+
+                            </div>
+                            <div>
+          <span class=\"fw-semibold text-dark fs-6\">Toilette & soins bébé
+          </span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette & bain de bébé</li>
+                                <li class=\"text-muted\">Hygiène et soins du bébé</li>
+                                <li class=\"text-muted\">hydratation visage et corps</li>
+                                <li class=\"text-muted\">croûtes de lait</li>
+                                <li class=\"text-muted\">massage et colique</li>
+                                <li class=\"text-muted\">protection solaire</li>
+                              </ul>
+
+                            </div>
+                          </div>
+
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Change de bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème de change</li>
+                                <li class=\"text-muted\">lingettes bébé</li>
+                                <li class=\"text-muted\">couches</li>
+                                <li class=\"text-muted\">soins du siège</li>
+                              </ul>
+
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Maman</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">tests de grossesse</li>
+                                <li class=\"text-muted\">allaitement</li>
+                                <li class=\"text-muted\">compléments alimentaires</li>
+                                <li class=\"text-muted\">anti vergetures</li>
+                              </ul>
+                            </div>
+
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Juvénile et jouets</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Trousseaux et cadeaux bébé
+
+          </span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Stérilisateurs
+
+
+          </span>
+
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Chauffe biberon
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Tire lait
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Compléments alimentaires bébé et enfant
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins spécifiques bébé et enfant
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Poux & lentes
+          </span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+
+                    <!--*****************************************************************************************************-->
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Compléments alimentaires
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -414px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Santé</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">mémoire et concentration</li>
+                              <li class=\"text-muted\">circulation sanguine</li>
+                              <li class=\"text-muted\">digestion et transit</li>
+                              <li class=\"text-muted\">confort urinaire</li>
+                              <li class=\"text-muted\">cholestérol et cardiovasculaire</li>
+                              <li class=\"text-muted\">respiratoire</li>
+                              <li class=\"text-muted\">état Grippal</li>
+                              <li class=\"text-muted\">sphère ORL</li>
+                              <li class=\"text-muted\">immunité</li>
+                              <li class=\"text-muted\">anémie</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Minceur</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">ventre plat</li>
+                              <li class=\"text-muted\">draineurs et détox</li>
+                              <li class=\"text-muted\">coupe faim et satiété</li>
+                              <li class=\"text-muted\">brûle graisse</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Confort</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">stress</li>
+                              <li class=\"text-muted\">trouble de sommeil</li>
+                              <li class=\"text-muted\">anxiété</li>
+                              <li class=\"text-muted\">magnésium</li>
+                              <li class=\"text-muted\">articulations</li>
+                              <li class=\"text-muted\">fatigue</li>
+                              <li class=\"text-muted\">anti-douleur</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Fertilité</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">fertilité homme</li>
+                              <li class=\"text-muted\">fertilité femme</li>
+                            </ul>
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">Anti-âge</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">peau</li>
+                              <li class=\"text-muted\">yeux</li>
+                              <li class=\"text-muted\">anti Oxydant</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Ménopause</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Stimulants sexuels</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Prise de poids</span>
+                            </div>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Bébé et enfant</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Beauté</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Anti-cellulite</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Mycoses Vaginales</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <!--**************************************************************************************-->
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Hygiène
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -658px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Puériculture</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">biberons</li>
+                                <li class=\"text-muted\">tétines</li>
+                                <li class=\"text-muted\">sucettes</li>
+                                <li class=\"text-muted\">vaisselles de bébé</li>
+                                <li class=\"text-muted\">anneaux de dentitions</li>
+                                <li class=\"text-muted\">accessoires</li>
+                                <li class=\"text-muted\">lunettes</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Toilette & soins bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette & bain de bébé</li>
+                                <li class=\"text-muted\">Hygiène et soins du bébé</li>
+                                <li class=\"text-muted\">hydratation visage et corps</li>
+                                <li class=\"text-muted\">croûtes de lait</li>
+                                <li class=\"text-muted\">massage et colique</li>
+                                <li class=\"text-muted\">protection solaire</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Change de bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème de change</li>
+                                <li class=\"text-muted\">lingettes bébé</li>
+                                <li class=\"text-muted\">couches</li>
+                                <li class=\"text-muted\">soins du siège</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Maman</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">tests de grossesse</li>
+                                <li class=\"text-muted\">allaitement</li>
+                                <li class=\"text-muted\">compléments alimentaires</li>
+                                <li class=\"text-muted\">anti vergetures</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Douche & bain</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">gel douche et savon liquide</li>
+                                <li class=\"text-muted\">savon et pain</li>
+                                <li class=\"text-muted\">bain (moussant, huile, sels, soins)</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins buccodentaires</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">brosses à dents</li>
+                                <li class=\"text-muted\">brosses à dents enfants</li>
+                                <li class=\"text-muted\">brosses à dents électriques</li>
+                                <li class=\"text-muted\">dentifrices</li>
+                                <li class=\"text-muted\">bain de bouche et solution gingivale</li>
+                                <li class=\"text-muted\">fil dentaire, brossette & accessoires</li>
+                                <li class=\"text-muted\">haleine</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hygiène intime</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette intime</li>
+                                <li class=\"text-muted\">lingettes intimes</li>
+                                <li class=\"text-muted\">serviettes hygiéniques et tampons</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Déodorants et anti-transpirants</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">déodorant aisselles</li>
+                                <li class=\"text-muted\">déodorant pieds</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Nez et oreilles</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">hygiène nasale</li>
+                                <li class=\"text-muted\">protection et nettoyage auriculaire</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Sexualité</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">préservatif</li>
+                                <li class=\"text-muted\">lubrifiant</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hygiène des mains</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">gels hydroalcooliques et antibactériens</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Solaires
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -658px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">protection inférieure à spf 20</li>
+                                <li class=\"text-muted\">protection de spf 20 à 49</li>
+                                <li class=\"text-muted\">protection supérieure à spf 50+</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires enfant</span>
+
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins après-soleil</span>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Stick lèvres solaire</span>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Préparateurs solaires et autobronzant</span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Pack solaire</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Vichyanthelios</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Bio & naturel
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -920px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Aromathéraphie</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">huiles essentielles</li>
+                                <li class=\"text-muted\">huiles végétales</li>
+                                <li class=\"text-muted\">sérum</li>
+                                <li class=\"text-muted\">diffuseurs, parfums d_ambiance</li>
+                                <li class=\"text-muted\">hydrolat</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Thés et tisanes</span>
+
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Matériel médical
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -1114px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Alitement</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">couches adulte</li>
+                              <li class=\"text-muted\">matelas</li>
+                              <li class=\"text-muted\">pansements</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Appareils de mesure</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">glucomètres</li>
+                              <li class=\"text-muted\">oxymètres de pouls</li>
+                              <li class=\"text-muted\">pèses personnes</li>
+                              <li class=\"text-muted\">tensiomètres</li>
+                              <li class=\"text-muted\">thermomètre</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Mobilité</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">cannes</li>
+                              <li class=\"text-muted\">fauteuils roulants</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Aérosol</span>
+
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">aide auditive</span>
+
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Appareil de massage</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">orthopédie</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">PROTECTION DE L’OREILLE</span>
+                            </div>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Sport</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Homme
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -1214px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Cheveux homme</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">anti-pelliculaire</li>
+                              <li class=\"text-muted\">Fortifiant et anti-chute</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Soin visage homme</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">anti-âge et anti-fatigue homme</li>
+                              <li class=\"text-muted\">nettoyants visage homme</li>
+                              <li class=\"text-muted\">soins hydratants homme</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires</span>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Déodorant homme</span>
+
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">Douche et bain homme</span>
+
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">rasage _ après-rasage</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class=\"paste-button\">
+                        <button class=\"button\">   <i class=\"fa fa-bars\"></i>
+                        </button>
+                        <div class=\"dropdown-content\">
+                          <a id=\"top\" href=\"#\"> Promos</a>
+                          <a id=\"middle\" href=\"#\"> Nouveautés</a>
+                          <a id=\"bottom\" href=\"#\">Bons Plans</a>
+                          <a id=\"bottom\" href=\"#\">Nos coffrets</a>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+      <section id=\"slider\">
+        <div id=\"carouselExampleCaptions\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+          <div class=\"carousel-inner\">
+            <div class=\"carousel-item active\">
+              <img src=\"img/1.jpg\" class=\"d-block w-100\" alt=\"...\" >
+              <div class=\"carousel-caption \">
+                <h5>
+                </h5>
+              </div>
+            </div>
+            <div class=\"carousel-item\">
+              <img src=\"img/2.jpg\" class=\"d-block w-100\" alt=\"...\">
+              <div class=\"carousel-caption \">
+                <h5>
+                </h5>
+              </div>
+            </div>
+            <div class=\"carousel-item\">
+              <img src=\"img/4.jpg\" class=\"d-block w-100\" alt=\"...\">
+              <div class=\"carousel-caption \">
+                <h5></h5>
+              </div>
+            </div>
+          </div>
+          <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\"
+                  data-bs-slide=\"prev\">
+            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+            <span class=\"visually-hidden\">Previous</span>
+          </button>
+          <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\"
+                  data-bs-slide=\"next\">
+            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+            <span class=\"visually-hidden\">Next</span>
+          </button>
+        </div>
+      </section>
+      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\"
+              integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\"
+              crossorigin=\"anonymous\"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class=\"py-3\" style=\"background-image: url('";
+        // line 1668
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/background-pattern.jpg"), "html", null, true);
+        yield "'); background-repeat: no-repeat; background-size: cover;\">
+
+        <div class=\"container-fluid\">
+          <div class=\"row\">
+            <div class=\"col-md-12\">
+
+              <div class=\"banner-blocks\">
+
+                <div class=\"banner-ad large bg-info block-1\">
+                  <div class=\"swiper main-swiper\">
+                    <div class=\"swiper-wrapper\">
+                      <!-- Slide 1 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-6 bg-light shadow rounded\">
+                          <!-- Main Product Image -->
+                          <img src=\"";
+        // line 1683
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image1.png"), "html", null, true);
+        yield "\" class=\"img-fluid\" alt=\"Parapharmacie Products\">
+
+                          <!-- Content Section -->
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase fw-bold\" style=\"color: #2db5a3;\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-outline-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Slide 2 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-8 bg-light shadow rounded\">
+                          <img src=\"";
+        // line 1698
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image2.png"), "html", null, true);
+        yield "\" class=\"img-fluid\" alt=\"Parapharmacie Products\">
+
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase text-primary fw-bold\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Acheter maintenant
+                            </a>
+                          </div>
+                          <div class=\"img-wrapper col-md-5 text-center\">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Slide 3 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-6 bg-light shadow rounded\">
+                          <!-- Main Product Image -->
+                          <img src=\"";
+        // line 1716
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image3.png"), "html", null, true);
+        yield "\" class=\"img-fluid\" alt=\"Parapharmacy Products\">
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase text-primary fw-bold\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Shop Now</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Customized Swiper Pagination -->
+                    <div class=\"swiper-pagination swiper-pagination-bullets\"></div>
+                  </div>
+                </div>
+
+                <div class=\"banner-ad bg-success-subtle block-2\" style=\"background: url('";
+        // line 1734
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/visage1.png"), "html", null, true);
+        yield "') no-repeat; background-size: cover; background-position: center;\">
+                  <div class=\"row banner-content p-5\">
+
+                  </div>
+                </div>
+
+
+
+                <div class=\"banner-ad bg-success-subtle block-3\" style=\"background: url('";
+        // line 1742
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/visage2.png"), "html", null, true);
+        yield "') no-repeat; background-size: cover; background-position: center;\">
+                  <div class=\"row banner-content p-5\">
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- / Banner Blocks -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class=\"py-5 overflow-hidden\">
+        <div class=\"container-fluid\">
+          <div class=\"row align-items-center justify-content-center\"> <!-- Flexbox alignment -->
+
+            <!-- Left side: Images stacked vertically -->
+            <div class=\"col-12 col-md-6 d-flex flex-column align-items-center\">
+              <img src=\"";
+        // line 1765
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/f1.jpg"), "html", null, true);
+        yield "\" alt=\"Category\" class=\"img-fluid mb-3 w-100\" style=\"max-width: 700px; height: auto;\">
+              <img src=\"";
+        // line 1766
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/f2.jpg"), "html", null, true);
+        yield "\" alt=\"Category\" class=\"img-fluid w-100\" style=\"max-width: 700px; height: auto;\">
+            </div>
+
+            <!-- Right side: Product display -->
+
+
+
+            <div class=\"product-wrapper col-md-5\" style=\"height: auto\" >
+              <div class=\"container\">
+                <div class=\"row\">
+
+                  <div class=\"col-lg-12\">
+                    <div class=\"home_deals_title\">
+
+                      <h4 style=\"color: #1DBF72; font-weight: bold \" > <i class=\"fas fa-gift\" style=\"margin-right: 8px;\"></i>&nbsp;&nbsp; Special offer</h4>
+                    </div>
+
+                    <div class=\"product-img-main-active d-flex flex-wrap justify-content-start\">
+                      ";
+        // line 1784
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 1784, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 1785
+            yield "                        ";
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["p"], "getType", [], "method", false, false, false, 1785) == "SO")) {
+                // line 1786
+                yield "                          <div class=\"product-img-box text-center\">
+
+                            <p><i class=\"far fa-check-circle\"></i> In stock</p>
+
+                            <img class=\"img-fluid\" src=\"";
+                // line 1790
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "imagePath", [], "any", false, false, false, 1790), "html", null, true);
+                yield "\" alt=\"\" style=\"display: block; margin: 0 auto;\">
+                            <div class=\"card-client\">
+
+                              <div class=\"name-client\"> ";
+                // line 1793
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "brand", [], "any", false, false, false, 1793), "html", null, true);
+                yield "
+                                <span>";
+                // line 1794
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "title", [], "any", false, false, false, 1794), "html", null, true);
+                yield "
+                          </span>
+
+                                <span> <h3 style=\"color:white; display: inline;\">";
+                // line 1797
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "originalPrice", [], "any", false, false, false, 1797), "html", null, true);
+                yield " TTC &nbsp;  <del  style=\"display: inline; font-size:20px;\">";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "price", [], "any", false, false, false, 1797), "html", null, true);
+                yield "</del></h3>
+</span>
+
+                                <button class=\"btn btn-light mt-2\" style=\"color:#1DBF72; font-size: 18px ; width: 200px ; text-align:left \">Ajouter au panier</button>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        ";
+            }
+            // line 1807
+            yield "                      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_key'], $context['p'], $context['_parent']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 1808
+        yield "                    </div>
+
+
+                    <div class=\"product-img-mini-active d-flex flex-column justify-content-center\">
+                      ";
+        // line 1812
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 1812, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 1813
+            yield "                        ";
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["p"], "getType", [], "method", false, false, false, 1813) == "SO")) {
+                // line 1814
+                yield "                          <img class=\"img-fluid m-1\" src=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "imagePath", [], "any", false, false, false, 1814), "html", null, true);
+                yield "\" alt=\"\">
+
+                        ";
+            }
+            // line 1817
+            yield "                      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_key'], $context['p'], $context['_parent']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 1818
+        yield "                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+
+        <div class=\"row\">
+          <div class=\"col-md-12\">
+
+            <div class=\"bootstrap-tabs product-tabs\">
+              <div class=\"tabs-header d-flex justify-content-between border-bottom my-5\">
+                <h3>Produits tendance</h3>
+              </div>
+
+              <div class=\"tab-content\" id=\"nav-tabContent\">
+                <div class=\"tab-pane fade show active\" id=\"nav-all\" role=\"tabpanel\" aria-labelledby=\"nav-all-tab\">
+
+                  <!-- Product Grid with Responsive Columns -->
+                  <div class=\"product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3\">
+                    ";
+        // line 1856
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 1856, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 1857
+            yield "                      ";
+            if ((CoreExtension::getAttribute($this->env, $this->source, $context["p"], "getType", [], "method", false, false, false, 1857) == "PT")) {
+                // line 1858
+                yield "                        <div class=\"col\" id=\"col\" data-product-imagePath=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "imagePath", [], "any", false, false, false, 1858), "html", null, true);
+                yield "\" data-product-id=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "id", [], "any", false, false, false, 1858), "html", null, true);
+                yield "\" data-product-title=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "title", [], "any", false, false, false, 1858), "html", null, true);
+                yield "\" data-product-brand=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "brand", [], "any", false, false, false, 1858), "html", null, true);
+                yield "\" data-product-price=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "price", [], "any", false, false, false, 1858), "html", null, true);
+                yield "\">
+                          <div class=\"product-item\">
+                            <span class=\"badge bg-success position-absolute m-3\">-30%</span>
+                            <a href=\"#\" class=\"btn-wishlist\">
+                              <svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg>
+                            </a>
+                            <figure class=\"text-center p-3\">
+                              <a href=\"";
+                // line 1865
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product_piece", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["p"], "id", [], "any", false, false, false, 1865)]), "html", null, true);
+                yield "\">
+                                <img src=\"";
+                // line 1866
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "imagePath", [], "any", false, false, false, 1866), "html", null, true);
+                yield "\" class=\"img-fluid img-first lazyload lazyloaded\" alt=\"";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "title", [], "any", false, false, false, 1866), "html", null, true);
+                yield "\">
+                              </a>
+                            </figure>
+                            <h5>";
+                // line 1869
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "brand", [], "any", false, false, false, 1869), "html", null, true);
+                yield "</h5>
+                            <p>";
+                // line 1870
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "title", [], "any", false, false, false, 1870), "html", null, true);
+                yield "</p>
+                            <span class=\"qty\">1 Unit</span>
+                            <span class=\"rating\">
+                          <svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5
+                        </span>
+                            <span class=\"price\">";
+                // line 1875
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["p"], "price", [], "any", false, false, false, 1875), "html", null, true);
+                yield " </span>
+
+                            <div class=\"d-flex align-items-center justify-content-between mt-2\">
+                              <div class=\"input-group product-qty\">
+                                <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\">-</button>
+                                <input type=\"number\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number quantity\" value=\"1\" min=\"1\">
+                                <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\">+</button>
+                              </div>
+                              <button class=\"cart-button add-to-cart\">
+                                <svg class=\"cart-icon\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                                  <path d=\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\" stroke-linejoin=\"round\" stroke-linecap=\"round\"></path>
+                                </svg>
+                                <span>Ajouter au panier</span>
+                              </button>
+                            </div>
+
+                          </div>
+                        </div>
+                      ";
+            }
+            // line 1894
+            yield "                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_key'], $context['p'], $context['_parent']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 1895
+        yield "                  </div>
+                  <!-- End Product Grid -->
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+
+          <div class=\"col-md-6\">
+            <div class=\"banner-ad bg-danger mb-3\" style=\"background: url('";
+        // line 1914
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/f.png"), "html", null, true);
+        yield "') no-repeat; background-position: right bottom;\">
+              <div class=\"banner-content p-5\">
+
+                <div class=\"categories text-primary fs-3 fw-bold\">Upto 25% Off</div>
+                <h3 class=\"banner-title\">Parapharmacie</h3>
+                <p>Wide range of health and wellness products to keep you feeling great.</p>
+                <a href=\"#\" class=\"btn btn-dark text-uppercase\">Shop Now</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col-md-6\">
+            <div class=\"banner-ad bg-info\" style=\"background: url('";
+        // line 1927
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/f2.png"), "html", null, true);
+        yield "') no-repeat; background-position: right bottom;\">
+              <div class=\"banner-content p-5\">
+
+                <div class=\"categories text-primary fs-3 fw-bold\">Upto 25% Off</div>
+                <h3 class=\"banner-title\">Creamy Muffins</h3>
+                <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
+                <a href=\"#\" class=\"btn btn-dark text-uppercase\">Show Now</a>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class=\"py-5 overflow-hidden\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"col-12\">
+
+            <div class=\"section-header d-flex flex-wrap justify-content-between my-3\">
+
+              <h2 class=\"section-title w-100 text-center text-md-start fs-5\">Les produits les plus vendus</h2>
+
+              <div class=\"d-flex flex-wrap align-items-center justify-content-between w-100\">
+                <a href=\"#\" class=\"btn-link text-decoration-none mb-2 mb-md-0 fs-6\"></a>
+                <div class=\"swiper-buttons d-flex justify-content-center\">
+                  <button class=\"swiper-prev products-carousel-prev btn btn-primary btn-sm p-1 fs-4 me-1\">❮</button>
+                  <button class=\"swiper-next products-carousel-next btn btn-primary btn-sm p-1 fs-4 ms-1\">❯</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class=\"row\">
+          <div class=\"col-md-12\">
+
+            <div class=\"products-carousel swiper\">
+              <div class=\"swiper-wrapper\">
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 1979
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img1.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>PHYTOCYANE TRAITEMENT ANTI-CHUTE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">115,148 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2008
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img2.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>BIOXSINE SHAMPOOING ANTI CHUTE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">42,999 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2037
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img3.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>ACM NOVOPHANE CHRONIC LOTION</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">88,536 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2066
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img4.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>SENSILIS SKIN LAB TROUSSE PHOTOCORRECTION</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">94,284 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2093
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img5.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>FILORGA COFFRET OPTIM EYES</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">116,520 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"https://pharma-shop.tn/24420-home_default/cytol-clean-gel-nettoyant-purifiant-175ml.webp\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>NOVEXPERT COFFRET VOYAGE AU COEUR DE L'ACIDE HYALURONIQUE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">193,838 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2149
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img7.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>AVENE CICALFATE+ CREME</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">56,000 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"";
+        // line 2177
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/img8.png"), "html", null, true);
+        yield "\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>GLUTA LIGHT 14 STICKS</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">74,443 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- / products-carousel -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id=\"latest-blog\" class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"section-header d-flex align-items-center justify-content-between my-5\">
+            <h2 class=\"section-title\">Articles de blog</h2>
+            <div class=\"btn-wrap align-right\">
+              <a href=\"#\" class=\"d-flex align-items-center nav-link\"> <svg width=\"24\" height=\"24\"><use xlink:href=\"#arrow-right\"></use></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class=\"row\">
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"";
+        // line 2229
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/dentaire.png"), "html", null, true);
+        yield "\" alt=\"post\" style=\"width: 100%; max-width: 1000px; height: auto;\" class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>22 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>tips & tricks</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Qu'est-ce qui explique l'apparition des caries même après l'âge de 70 ans ?</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"";
+        // line 2251
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/sante.png"), "html", null, true);
+        yield "\" alt=\"post\"  class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>25 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>trending</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Tout ce qu'il faut savoir sur Vitrobio et Naturveda dans le domaine de la santé</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"";
+        // line 2273
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/soumel.png"), "html", null, true);
+        yield "\" alt=\"post\" class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>28 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>inspiration</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Quelle semelle est recommandée pour soulager une épine calcanéenne ?</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"col-12\">
+            <div class=\"text-content\">
+              <p class=\"lead\">
+
+              <h1>Parapharmacie en ligne N°1 en Tunisie : Des produits de qualité pour votre bien-être</h1><br>
+
+              Soyez belle et rayonnante tout au long de l’année grâce à votre <strong>1ère parapharmacie en ligne en Tunisie.</strong>
+              </p>
+              <p>
+                À la recherche de produits de qualité pour prendre soin de votre santé et de votre beauté ? Nous proposons un catalogue de plus de 7000 produits et les marques des plus grands laboratoires.
+              </p>
+              <p>
+              <p>Notre sélection de produits inclut des <span style=\"color:#1DBF72;\">crèmes solaires</span>, des <span style=\"color:#1DBF72;\">compléments alimentaires</span>, des soins de santé naturels, des produits cosmétiques, des articles pour <span style=\"color:#1DBF72;\">bébés et enfants</span>, ainsi que des solutions pour le bien-être général. Nous proposons aussi des produits adaptés aux sportifs (musculation, protéines, etc.) et pour vos animaux de compagnie (<span style=\"color:#1DBF72;\">chiens et chats</span>).</p>
+
+              <p>
+                Nous travaillons avec des marques reconnues dans le monde entier (Avène, Nuxe, Filorga, ...) pour vous offrir les meilleurs produits de parapharmacie 100% authentiques. Nous sommes fiers de proposer des produits de qualité supérieure qui répondent à toutes les normes de sécurité et de qualité. En effet, tous nos produits sont certifiés authentiques et recommandés par les meilleurs dermatologues.
+              </p>
+              <p>
+                Commander sur seasidecare.shop.com est facile et sécurisé. Nous proposons une livraison rapide et fiable partout en Tunisie. Notre équipe de professionnels est à votre disposition pour vous conseiller et vous guider dans le choix des produits les plus adaptés à vos besoins et pour vous assister dans le processus de commande et de suivi de votre livraison.
+              </p>
+              <p>
+                Chez votre parapharmacie en ligne seasidecare.shop.com, nous sommes convaincus que vous trouverez les produits dont vous avez besoin. N'hésitez pas à parcourir notre site pour découvrir nos gammes de produits pour Femmes, Hommes et Enfants.
+              </p>
+              <p>
+                Nous proposons également régulièrement des promos et des bons plans qui vous permettront de vous faire plaisir sans vous ruiner en profitant des prix les moins chers en Tunisie pour des produits hauts de gamme.
+              </p>
+              <p>
+                Avec des milliers de clientes satisfaites, seasidecare.shop.com s'est positionnée depuis plusieurs années comme le leader des parapharmacies en Tunisie et nous sommes constamment en train d'innover afin de vous offrir la meilleure expérience client et rendre votre visite sur notre site plus agréable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-4\">
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-primary text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M21.5 15a3 3 0 0 0-1.9-2.78l1.87-7a1 1 0 0 0-.18-.87A1 1 0 0 0 20.5 4H6.8l-.33-1.26A1 1 0 0 0 5.5 2h-2v2h1.23l2.48 9.26a1 1 0 0 0 1 .74H18.5a1 1 0 0 1 0 2h-13a1 1 0 0 0 0 2h1.18a3 3 0 1 0 5.64 0h2.36a3 3 0 1 0 5.82 1a2.94 2.94 0 0 0-.4-1.47A3 3 0 0 0 21.5 15Zm-3.91-3H9L7.34 6H19.2ZM9.5 20a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">livraison gratuite</h5>
+                  <p class=\"card-text text-muted mb-0\">Profitez de la livraison gratuite sur toutes les commandes, sans minimum requis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-success text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78ZM18 11.88a7 7 0 0 1-2.93 5.7L12 19.77l-3.07-2.19A7 7 0 0 1 6 11.88v-6.3a10 10 0 0 0 6-1.39a10 10 0 0 0 6 1.39Zm-4.46-2.29l-2.69 2.7l-.89-.9a1 1 0 0 0-1.42 1.42l1.6 1.6a1 1 0 0 0 1.42 0L15 11a1 1 0 0 0-1.42-1.42Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Paiement 100% sécurisé</h5>
+                  <p class=\"card-text text-muted mb-0\">Vos paiements sont traités en toute sécurité grâce à la dernière technologie de cryptage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-danger text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Zm-7 2h2v3a1 1 0 0 1-2 0Zm-4 0h2v3a1 1 0 0 1-2 0ZM7 7h2v3a1 1 0 0 1-2 0Zm-3 4a1 1 0 0 1-1-1V7h2v3a1 1 0 0 1-1 1Zm10 10h-4v-2a2 2 0 0 1 4 0Zm5 0h-3v-2a4 4 0 0 0-8 0v2H5v-8.18a3.17 3.17 0 0 0 1-.6a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3.17 3.17 0 0 0 1 .6Zm2-11a1 1 0 0 1-2 0V7h2ZM4.3 3H20a1 1 0 0 0 0-2H4.3a1 1 0 0 0 0 2Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Garantie de qualité</h5>
+                  <p class=\"card-text text-muted mb-0\">Nous garantissons une haute qualité grâce à des tests rigoureux et assurons votre satisfaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-warning text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M12 8.35a3.07 3.07 0 0 0-3.54.53a3 3 0 0 0 0 4.24L11.29 16a1 1 0 0 0 1.42 0l2.83-2.83a3 3 0 0 0 0-4.24A3.07 3.07 0 0 0 12 8.35Zm2.12 3.36L12 13.83l-2.12-2.12a1 1 0 0 1 0-1.42a1 1 0 0 1 1.41 0a1 1 0 0 0 1.42 0a1 1 0 0 1 1.41 0a1 1 0 0 1 0 1.42ZM12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 2.26 6.33l-2 2a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20Zm0 18H5.41l.93-.93a1 1 0 0 0 0-1.41A8 8 0 1 1 12 20Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Économies garanties</h5>
+                  <p class=\"card-text text-muted mb-0\">Économisez davantage avec nos réductions et offres exclusives chaque jour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-info text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M18 7h-.35A3.45 3.45 0 0 0 18 5.5a3.49 3.49 0 0 0-6-2.44A3.49 3.49 0 0 0 6 5.5A3.45 3.45 0 0 0 6.35 7H6a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h1v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6h1a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3Zm-7 13H8a1 1 0 0 1-1-1v-6h4Zm0-9H5v-1a1 1 0 0 1 1-1h5Zm0-4H9.5A1.5 1.5 0 1 1 11 5.5Zm2-1.5A1.5 1.5 0 1 1 14.5 7H13ZM17 19a1 1 0 0 1-1 1h-3v-7h4Zm2-8h-6V9h5a1 1 0 0 1 1 1Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Daily Offers</h5>
+                  <p class=\"card-text text-muted mb-0\">Get exclusive deals every day for limited-time offers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+      <div class=\"container\">
+        <div class=\"row\">
+
+          <div class=\"col-lg-3 col-md-6 col-sm-6\">
+            <div class=\"footer-about\">
+              <div class=\"footer-logo\">
+                <img src=\"";
+        // line 2435
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/SEASIDECAREtest.png"), "html", null, true);
+        yield "\" alt=\"post\"  style=\"width:250px ; height: auto\" >
+              </div>
+              <p>Seasidecare.shop.com est la parapharmacie en ligne numéro 1 en Tunisie. Découvrez une large gamme de produits parapharmaceutiques, allant de la beauté à la santé, en passant par le bien-être et la minceur, directement depuis chez vous.</p>
+              <a href=\"#\"><img src=\"img/payment.png\" alt=\"\"></a>
+            </div>
+          </div>
+
+          <div class=\"col-lg-2 offset-lg-1 col-md-3 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Informations</h6>
+              <ul>
+                <li><a href=\"#\">Promotions</a></li>
+                <li><a href=\"#\">Nouveaux produits</a></li>
+                <li><a href=\"#\">Meilleures ventes</a></li>
+                <li><a href=\"#\">Contactez-nous</a></li>
+                <li><a href=\"#\">Conditions d'utilisation</a></li>
+                <li><a href=\"#\">A propos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class=\"col-lg-2 col-md-3 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Mon Compte</h6>
+              <ul>
+                <li><a href=\"#\">Mes commandes</a></li>
+                <li><a href=\"#\">Mes avoirs</a></li>
+                <li><a href=\"#\">Mes adresses</a></li>
+                <li><a href=\"#\">Mes informations personnelles</a></li>
+                <li><a href=\"#\">Mes bons de réduction</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class=\"col-lg-3 offset-lg-1 col-md-6 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Service Client</h6>
+              <p style=\"color: white\" >Tél: <p style=\"color: white; font-size: 13px \"  > +216 24 006 483</p></p>
+              <p style=\"color: white\" >Email: <a href=\"mailto:contact@seasidecare\" style=\"color: white; font-size: 13px \" >contact@seasidecare</a></p>
+              <div class=\"footer-newslatter\">
+                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                <form action=\"#\">
+                  <input type=\"text\" placeholder=\"Your Email\">
+                  <button type=\"submit\"><span><i class=\"fa fa-envelope\" arial-hidden=\"true\"></i></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class=\"row\">
+          <div class=\"col-lg-12 text-center\">
+            <div class=\"footer-copyright-text\">
+              <p>Copyright &copy; 2025 All rights reserved <i class=\"fa fa-heart-o\" arial-hidden=\"true\"></i>
+                by <a href=\"#\">Dasinformatique</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <script src=\"";
+        // line 2499
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-1.11.0.min.js"), "html", null, true);
+        yield "\"></script>
+    <script src=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js\"></script>
+    <script src=\"";
+        // line 2501
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/plugins.js"), "html", null, true);
+        yield "\"></script>
+    <script src=\"";
+        // line 2502
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/script.js"), "html", null, true);
+        yield "\"></script>
+</body>
+<script src=\"js/bootstrap.min.js\"></script>
+
+<script src=\"js/jquery.nice-number.js\"></script>
+<script src=\"js/slick.min.js\"></script>
+<script>
+
+  \$('.product-img-main-active').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.product-img-mini-active',
+    arrows: true,
+    autoplaySpeed: 3000,
+    prevArrow:'<button type=\"button\" class=\"slick-prev\"><i class=\"fa fa-arrow-left\"></i></button>',
+    nextArrow:'<button type=\"button\" class=\"slick-next\"><i class=\"fa fa-arrow-right\"></i></button>',
+  });
+  \$('.product-img-mini-active').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-img-main-active',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: true,
+    prevArrow:'<button type=\"button\" class=\"slick-prev\"><i class=\"fa fa-arrow-left\"></i></button>',
+    nextArrow:'<button type=\"button\" class=\"slick-next\"><i class=\"fa fa-arrow-right\"></i></button>',
+  });
+
+  // product counter start
+  \$(function(){
+    \$('.product-spinner input[type=\"number\"]').niceNumber();
+  });
+
+
+
+
+</script>
+
+</html>
+<link href=\"https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css\" rel=\"stylesheet\">
+
+<!-- SweetAlert2 JS -->
+<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>";
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        yield from [];
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName(): string
+    {
+        return "index.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo(): array
+    {
+        return array (  2750 => 2502,  2746 => 2501,  2741 => 2499,  2674 => 2435,  2509 => 2273,  2484 => 2251,  2459 => 2229,  2404 => 2177,  2373 => 2149,  2314 => 2093,  2284 => 2066,  2252 => 2037,  2220 => 2008,  2188 => 1979,  2133 => 1927,  2117 => 1914,  2096 => 1895,  2090 => 1894,  2068 => 1875,  2060 => 1870,  2056 => 1869,  2048 => 1866,  2044 => 1865,  2025 => 1858,  2022 => 1857,  2018 => 1856,  1978 => 1818,  1972 => 1817,  1965 => 1814,  1962 => 1813,  1958 => 1812,  1952 => 1808,  1946 => 1807,  1931 => 1797,  1925 => 1794,  1921 => 1793,  1915 => 1790,  1909 => 1786,  1906 => 1785,  1902 => 1784,  1881 => 1766,  1877 => 1765,  1851 => 1742,  1840 => 1734,  1819 => 1716,  1798 => 1698,  1780 => 1683,  1762 => 1668,  740 => 648,  734 => 645,  731 => 644,  729 => 643,  710 => 635,  705 => 632,  699 => 629,  695 => 628,  692 => 627,  690 => 626,  653 => 592,  649 => 591,  80 => 25,  71 => 19,  67 => 18,  48 => 1,);
+    }
+
+    public function getSourceContext(): Source
+    {
+        return new Source("<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <title>parapharmacie</title>
+  <meta charset=\"utf-8\">
+  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+  <meta name=\"format-detection\" content=\"telephone=no\">
+  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+  <meta name=\"author\" content=\"\">
+  <meta name=\"keywords\" content=\"\">
+  <meta name=\"description\" content=\"\">
+  <link href=\"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap\" rel=\"stylesheet\">
+  <link rel=\"icon\" type=\"image/png\" href=\"images/lf.png\">
+
+  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css\">
+  <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ\" crossorigin=\"anonymous\">
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('css/vendor.css') }}\">
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('css1/style.css') }}\">
+  <link href=\"css1/fontawesome.min.css\" rel=\"stylesheet\" type=\"text/css\" />
+  <link href=\"css1/jquery.nice-number.css\" rel=\"stylesheet\" type=\"text/css\" />
+  <link href=\"css1/slick.css\" rel=\"stylesheet\" type=\"text/css\" />
+
+
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"{{ asset('style.css') }}\">
+
+  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+  <link href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap\" rel=\"stylesheet\">
+  <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\">
+  <style>
+
+    /*first slide*/
+
+    .carousel-inner{
+      height: auto;
+
+      border-radius: 20px;
+
+    }
+    .carousel-caption {
+      bottom: 100%;
+      transform: translate(0, 50%);
+    }
+
+    .carousel-caption h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Responsive */
+
+    @media (min-width: 992px) {
+
+      .carousel-caption h5 {
+        font-size: 4rem;
+      }
+    }
+
+    /* Style for the carousel control button */
+
+
+    /* Next icon design */
+    .carousel-control-next-icon {
+
+      background-color: #13afa7;
+
+    }
+
+    .carousel-control-prev-icon {
+      background-color:#13afa7;
+
+    }
+
+    /**********************************************/
+
+    /***** just for card name and client */
+    .card-client {
+      background: #1DBF72;
+
+      border: 4px solid #7cdacc;
+      box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+      border-radius: 10px;
+      color: #fff;
+      font-family: \"Poppins\", sans-serif;
+      transition: all 0.3s ease;
+
+      padding-top: 20px;
+    }
+    .card-client:hover {
+      transform: translateY(-10px);
+    }
+    .name-client {
+      text-align: left;
+      margin: 0;
+      margin-top: -20px;
+      font-weight: 600;
+      font-size: 18px;
+      padding-left: 15px;
+      padding-bottom: 50px;
+
+    }
+
+    .name-client span {
+      display: block;
+      font-weight: 400;
+      font-size: 18px; /* Adjust for readability */
+      white-space: normal; /* Ensures wrapping */
+      word-wrap: break-word; /* Breaks long words */
+      line-height: 1.4; /* Increases readability */
+      max-width: 100%; /* Prevents overflow */
+    }
+    /*********************************************************/
+
+
+    /*footer design*/
+    /* General Styles */
+    html,
+    body{
+      height: 100%;
+      font-family: \"Nunito Sans\" , sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    p{
+      font-size: 15px;
+      font-family: \"Nunito Sans\" , sans-serif ;
+      color: #3d3d3d;
+      font-weight: 400;
+      line-height: 25px;
+      margin: 0 0 15px 0;
+    }
+    img{
+      max-width: 100%;
+    }
+    a{
+      text-decoration: none;
+    }
+    ul{
+      padding-left: 0;
+    }
+
+    input:focus{
+      outline: none;
+    }
+    a:hover,
+    a:focus{
+      text-decoration: none;
+      outline: none;
+      color: #ffffff;
+    }
+
+
+    .footer{
+      background: #00453c;
+      padding-top: 70px;
+    }
+    .footer-about{
+      margin-bottom: 30px;
+    }
+    .footer-about .footer-logo{
+      margin-bottom: 30px;
+    }
+    .footer-about p{
+      color: #b7b7b7;
+      margin-bottom: 30px;
+    }
+    .footer-widget{
+      margin-bottom: 30px;
+    }
+    .footer-widget h6{
+      color:  #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .footer-widget ul li{
+      line-height: 36px;
+      list-style: none;
+    }
+    .footer-widget ul li a{
+      color: #b7b7b7;
+      font-size: 15px;
+    }
+    .footer-widget ul li a:hover{
+      color: #e53637;
+    }
+    .footer-widget .footer-newslatter p{
+      color: #b7b7b7;
+    }
+    .footer-widget .footer-newslatter form{
+      position: relative;
+    }
+    .footer-widget .footer-newslatter form input{
+      width: 100%;
+      font-size: 15px;
+      color: #ffffff;
+      background: transparent;
+      border: none;
+      padding: 15px 0;
+      border-bottom: 2px solid #ffffff;
+    }
+    .footer-widget .footer-newslatter form input::placeholder{
+      color: #b7b7b7;
+    }
+    .footer-widget .footer-newslatter form button{
+      color: #b7b7b7;
+      font-size: 16px;
+      position: absolute;
+      right: 5px;
+      top: 0;
+      height: 100%;
+      background: transparent;
+      border: none;
+    }
+    .footer-copyright-text{
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .footer-copyright-text p{
+      color: #b7b7b7;
+      margin-bottom: 0;
+    }
+    .footer-copyright-text p i{
+      color: #e53637;
+    }
+    .footer-copyright-text p a{
+      color: #e53637;
+    }
+
+
+    /************************************/
+
+    /*read more design*/
+
+
+    /* Ensuring card body has consistent height */
+    .post-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card-body {
+      flex-grow: 1;  /* Ensures content can expand, but the card stays the same size */
+    }
+
+    .card {
+      height: 100%;  /* Makes the card expand fully within the container */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .read-more {
+      color: white;
+      background-color: #13afa7;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+      background-color: #0e7f7b;  /* Slightly darker shade on hover */
+      transform: scale(1.05);  /* Slight zoom effect */
+    }
+
+    .read-more:focus {
+      outline: 3px solid #0e7f7b;  /* Focus outline for accessibility */
+    }
+
+
+    /* Optional: Adjust the height of each card to be the same */
+    .post-item {
+      min-height: 350px; /* Adjust this value based on your design needs */
+    }
+
+
+
+    /**************************************/
+
+
+
+
+  </style>
+</head>
+<body>
+
+<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"display: none;\">
+  <defs>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"link\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"arrow-right\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"category\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"calendar\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"heart\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"plus\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"minus\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"cart\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"check\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"trash\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"star-outline\" viewBox=\"0 0 15 15\">
+      <path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"star-solid\" viewBox=\"0 0 15 15\">
+      <path fill=\"currentColor\" d=\"M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"search\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"user\" viewBox=\"0 0 24 24\">
+      <path fill=\"currentColor\" d=\"M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z\"/>
+    </symbol>
+    <symbol xmlns=\"http://www.w3.org/2000/svg\" id=\"close\" viewBox=\"0 0 15 15\">
+      <path fill=\"currentColor\" d=\"M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z\"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class=\"preloader-wrapper\">
+  <div class=\"preloader\">
+  </div>
+</div>
+
+<div class=\"offcanvas offcanvas-end\" data-bs-scroll=\"true\" tabindex=\"-1\" id=\"offcanvasCart\" aria-labelledby=\"MyCart\">
+  <div class=\"offcanvas-header justify-content-center border-bottom\">
+    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+  </div>
+
+  <div class=\"offcanvas-body\">
+    <!-- Cart Header with Icon -->
+    <div class=\"d-flex justify-content-between align-items-center mb-4\">
+      <div class=\"loader\">
+        <div class=\"truckWrapper\">
+          <div class=\"truckBody\">
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 198 93\"
+                    class=\"trucksvg\"
+            >
+              <path
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#F83D3D\"
+                      d=\"M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z\"
+              ></path>
+              <path
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#7D7C7C\"
+                      d=\"M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z\"
+              ></path>
+              <path
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      d=\"M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z\"
+              ></path>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#FFFCAB\"
+                      rx=\"1\"
+                      height=\"7\"
+                      width=\"5\"
+                      y=\"63\"
+                      x=\"187\"
+              ></rect>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      rx=\"1\"
+                      height=\"11\"
+                      width=\"4\"
+                      y=\"81\"
+                      x=\"193\"
+              ></rect>
+              <rect
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#DFDFDF\"
+                      rx=\"2.5\"
+                      height=\"90\"
+                      width=\"121\"
+                      y=\"1.5\"
+                      x=\"6.5\"
+              ></rect>
+              <rect
+                      stroke-width=\"2\"
+                      stroke=\"#282828\"
+                      fill=\"#DFDFDF\"
+                      rx=\"2\"
+                      height=\"4\"
+                      width=\"6\"
+                      y=\"84\"
+                      x=\"1\"
+              ></rect>
+            </svg>
+          </div>
+          <div class=\"truckTires\">
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 30 30\"
+                    class=\"tiresvg\"
+            >
+              <circle
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      r=\"13.5\"
+                      cy=\"15\"
+                      cx=\"15\"
+              ></circle>
+              <circle fill=\"#DFDFDF\" r=\"7\" cy=\"15\" cx=\"15\"></circle>
+            </svg>
+            <svg
+                    xmlns=\"http://www.w3.org/2000/svg\"
+                    fill=\"none\"
+                    viewBox=\"0 0 30 30\"
+                    class=\"tiresvg\"
+            >
+              <circle
+                      stroke-width=\"3\"
+                      stroke=\"#282828\"
+                      fill=\"#282828\"
+                      r=\"13.5\"
+                      cy=\"15\"
+                      cx=\"15\"
+              ></circle>
+              <circle fill=\"#DFDFDF\" r=\"7\" cy=\"15\" cx=\"15\"></circle>
+            </svg>
+          </div>
+          <div class=\"road\"></div>
+
+          <svg
+                  xml:space=\"preserve\"
+                  viewBox=\"0 0 453.459 453.459\"
+                  xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+                  xmlns=\"http://www.w3.org/2000/svg\"
+                  id=\"Capa_1\"
+                  version=\"1.1\"
+                  fill=\"#000000\"
+                  class=\"lampPost\"
+          >
+      <path
+              d=\"M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+h78.747C231.693,100.736,232.77,106.162,232.77,111.694z\"
+      ></path>
+    </svg>
+        </div>
+      </div>
+
+      <span class=\"badge bg-primary rounded-pill\">0</span>
+
+    </div>
+
+    <!-- Optional Custom CSS for Animation -->
+
+
+
+    <!-- Cart Items List -->
+    <ul class=\"list-group mb-4\">
+      <li class=\"list-group-item d-flex justify-content-between align-items-center border-0 rounded-3 shadow-sm bg-light\">
+        <div class=\"d-flex align-items-center\">
+          <!-- Product Image -->
+          <span class=\"fw-bold text-uppercase text-dark\">Total</span>
+        </div>
+
+        <div class=\"d-flex align-items-center\">
+          <strong class=\"display-6 text-primary ms-2\">0 TND</strong>
+        </div>
+      </li>
+    </ul>
+
+
+    <!-- Action Buttons -->
+    <div class=\"d-grid gap-2 mb-4\">
+      <button id=\"checkout-button\" class=\"btn btn-dark\">Voir le Panier</button>
+    </div>
+
+    <div class=\"d-grid gap-2\">
+      <button class=\"btn btn-outline-danger\" id=\"clear-cart\">Vider le Panier</button>
+    </div>
+
+    <!-- Optional Footer for Cart -->
+    <div class=\"offcanvas-footer mt-4 text-center\">
+      <small>Une fois que vous êtes prêt, procédez au paiement.</small>
+    </div>
+  </div>
+</div>
+
+<!-- Optional Smooth Animations for Open/Close -->
+
+
+<!-- Optional Custom CSS to refine the look -->
+
+
+<!-- Bootstrap Icons (Ensure you have Bootstrap Icons CDN included in your project) -->
+<link href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+
+<div class=\"offcanvas offcanvas-end\" data-bs-scroll=\"true\" tabindex=\"-1\" id=\"offcanvasSearch\" aria-labelledby=\"Search\">
+  <div class=\"offcanvas-header justify-content-center\">
+    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+  </div>
+  <div class=\"offcanvas-body\">
+    <div class=\"order-md-last\">
+      <h4 class=\"d-flex justify-content-between align-items-center mb-3\">
+        <span class=\"text-primary\">Rechercher</span>
+      </h4>
+      <form role=\"search\" action=\"/home\" method=\"get\" class=\"d-flex mt-3 gap-0\">
+        <input class=\"form-control rounded-start rounded-0 bg-light\" type=\"email\" placeholder=\"What are you looking for?\" aria-label=\"What are you looking for?\">
+        <button class=\"btn btn-dark rounded-end rounded-0\" type=\"submit\">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<header>
+
+  <div class=\"header_top d-none d-md-block\">
+    <div class=\"container\">
+      <div class=\"row align-items-center\">
+        <!-- Contact Info -->
+        <div class=\"col-md-4\">
+          <ul class=\"list-unstyled m-0\">
+            <li>
+              <a href=\"#\" class=\"text-decoration-none text-white\">
+                <i class=\"fas fa-phone me-1\"></i> 216-24-006-483
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Promotion Message -->
+        <div class=\"col-md-4 text-center\">
+          <p class=\"promo_message m-0 small\">
+            <i class=\"fas fa-truck me-1\"></i> Livraison gratuite dès 99 DT d'achat !
+          </p>
+        </div>
+
+        <!-- Hours -->
+        <div class=\"col-md-4 text-end\">
+          <span class=\"time_o small\">🕒 8h00 - 18h00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=\"container-fluid\">
+    <div class=\"row py-3 border-bottom\">
+
+      <div class=\"col-sm-4 col-lg-3 text-center text-sm-start\">
+        <div class=\"main-logo\">
+          <a href=\"{{path('home')}}\">
+            <img src=\"{{ asset('images/logo.png') }}\" alt=\"logo\" class=\"img-fluid\" style=\"max-width: 78%; height: auto; object-fit: contain;\">
+          </a>
+        </div>
+      </div>
+      <div class=\"col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block\">
+        <div class=\"search-bar row bg-light p-2 my-1 rounded-3 shadow-sm align-items-center\">
+          <div class=\"col-10\">
+            <form id=\"search-form\" action=\"index.html\" method=\"post\">
+              <input type=\"text\" class=\"form-control border-0 bg-transparent\" placeholder=\"Cherchez un produit\" style=\"font-size: 0.9rem; padding: 0.4rem;\">
+            </form>
+          </div>
+          <div class=\"col-2 text-center\">
+            <button type=\"submit\" form=\"search-form\" class=\"btn p-0\">
+              <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" style=\"fill: #6c757d;\">
+                <path d=\"M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z\"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=\"col-sm-8 col-lg-3 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0\">
+        <ul class=\"d-flex justify-content-end list-unstyled m-0\">
+          <!-- Trigger Button for Sign In -->
+          <li>
+            <div class=\"compte text-end d-none d-lg-block\">
+              <button class=\"border-0 bg-transparent d-flex flex-column gap-2 lh-1\" type=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#signInModal\">
+    <span class=\"fs-6 text-muted\">
+      <i class=\"bi bi-person fs-5\"></i> Compte
+    </span>
+              </button>
+            </div>
+
+            {% if app.session.get('username') %}
+              <div class=\"d-flex align-items-center mt-2\">
+                <span class=\"fw-bold ms-2\">{{ app.session.get('username') }}</span>
+                <a href=\"{{ path('app_logout') }}\" class=\"btn btn-danger ms-3\">Log Out</a>
+              </div>
+            {% endif %}
+          </li>
+
+          <!-- Sign In Modal -->
+          <div class=\"modal fade {% if app.request.get('showModal') %}show{% endif %}\" id=\"signInModal\" tabindex=\"-1\" aria-labelledby=\"signInModalLabel\" {% if app.request.get('showModal') %}aria-hidden=\"false\" style=\"display: block;\"{% else %}aria-hidden=\"true\" style=\"display: none;\"{% endif %}>
+            <div class=\"modal-dialog\">
+              <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                  <h5 class=\"modal-title\" id=\"signInModalLabel\">Sign In</h5>
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                </div>
+                <div class=\"modal-body\">
+                  {% if app.request.get('showModal') %}
+                    <div class=\"alert alert-danger\">
+                      {{ app.request.get('showModal') }}
+                    </div>
+                  {% endif %}
+                  <form action=\"/verif_log\" method=\"post\">
+                    <div class=\"mb-3\">
+                      <label for=\"emailOrPhone\" class=\"form-label\">E-mail Address</label>
+                      <input type=\"text\" name=\"email\" class=\"form-control\" id=\"emailOrPhone\" placeholder=\"Enter your email\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"password\" class=\"form-label\">Password</label>
+                      <input type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Enter your password\" required>
+                    </div>
+                    <button type=\"submit\" class=\"btn btn-primary w-100\">Sign In</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Create Account Modal -->
+          <div class=\"modal fade\" id=\"createAccountModal\" tabindex=\"-1\" aria-labelledby=\"createAccountModalLabel\" aria-hidden=\"true\">
+            <div class=\"modal-dialog\">
+              <div class=\"modal-content\">
+                <div class=\"modal-header\">
+                  <h5 class=\"modal-title\" id=\"createAccountModalLabel\">Create Account</h5>
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
+                </div>
+                <div class=\"modal-body\">
+                  <form>
+                    <div class=\"mb-3\">
+                      <label for=\"userName\" class=\"form-label fw-bold\">Your Name</label>
+                      <input type=\"text\" class=\"form-control\" id=\"userName\" placeholder=\"First and last name\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"newEmail\" class=\"form-label fw-bold\">E-mail Address</label>
+                      <input type=\"email\" class=\"form-control\" id=\"newEmail\" placeholder=\"Enter your email\" required>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"Password\" class=\"form-label fw-bold\">Password</label>
+                      <input type=\"password\" class=\"form-control\" id=\"Password\" placeholder=\"At least 6 characters\" minlength=\"6\" required>
+                      <div class=\"form-text\">Passwords must be at least 6 characters long.</div>
+                    </div>
+                    <div class=\"mb-3\">
+                      <label for=\"confirmPassword\" class=\"form-label fw-bold\">Confirm Password</label>
+                      <input type=\"password\" class=\"form-control\" id=\"confirmPassword\" placeholder=\"\" required>
+                    </div>
+                    <button type=\"submit\" class=\"btn btn-primary w-100\">Create Account</button>
+                  </form>
+                  <div class=\"text-center mt-3\">
+                    <p>Already have an account?
+                      <a href=\"#\" class=\"text-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#signInModal\" data-bs-dismiss=\"modal\">Sign In</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Buttons for Cart and Search (Mobile View) -->
+          <li class=\"d-lg-none\">
+            <a href=\"#\" class=\"rounded-circle bg-light p-2 mx-1\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasCart\" aria-controls=\"offcanvasCart\">
+              <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><use xlink:href=\"#cart\"></use></svg>
+            </a>
+          </li>
+          <li class=\"d-lg-none\">
+            <a href=\"#\" class=\"rounded-circle bg-light p-2 mx-1\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasSearch\" aria-controls=\"offcanvasSearch\">
+              <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><use xlink:href=\"#search\"></use></svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Cart (Desktop View) -->
+        <div class=\"cart text-end d-none d-lg-block\">
+          <button class=\"border-0 bg-transparent d-flex flex-column gap-2 lh-1\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasCart\" aria-controls=\"offcanvasCart\">
+    <span class=\"fs-6 text-muted position-relative\">
+      <i class=\"bi bi-cart fs-5 position-relative\">
+        <span class=\"cart-badge position-absolute top-0 start-100 translate-middle\">
+          0
+        </span>
+      </i>
+     &nbsp; Panier
+    </span>
+          </button>
+        </div>
+
+
+
+
+      </div>
+
+
+
+      <!-- c la publicité -->
+      <!-- From Uiverse.io by r0n-dev -->
+      <div class=\"div\">
+        <p id=\"h2\">Chez Seaside Care, nous mettons un point d'honneur à proposer des produits de qualité....<span id=\"lol\"></span></p>
+      </div>
+
+
+   
+
+
+
+
+
+
+      <div class=\"container-fluid\">
+        <div class=\"row py-3\">
+          <div class=\"d-flex justify-content-center justify-content-sm-between align-items-center\">
+            <nav class=\"main-menu d-flex navbar navbar-expand-lg\">
+              <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvasNavbar\" aria-controls=\"offcanvasNavbar\">
+                <span class=\"navbar-toggler-icon\"></span>
+              </button>
+
+              <div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"offcanvasNavbar\" aria-labelledby=\"offcanvasNavbarLabel\">
+                <div class=\"offcanvas-header justify-content-center\">
+                  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>
+                </div>
+
+                <div class=\"offcanvas-body\">
+
+
+                  <ul class=\"navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0\">
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"visageDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" >
+                        Visage
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"visageDropdown\" style=\"min-width: 1200px; border-radius: 10px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins hydratants et nourrissants</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Hydratants toutes peaux</li>
+                                <li class=\"text-muted\">Hydratants peaux normales à mixtes</li>
+                                <li class=\"text-muted\">Hydratants peaux sèches</li>
+                                <li class=\"text-muted\">Hydratants peaux intolérantes</li>
+                                <li class=\"text-muted\">Hydratants peaux atopiques</li>
+                                <li class=\"text-muted\">Soins teintés, bonne mine</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins anti-âge et anti-rides</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Premières rides</li>
+                                <li class=\"text-muted\">Rides installées</li>
+                                <li class=\"text-muted\">Rides marquées, perte de fermeté</li>
+                                <li class=\"text-muted\">Sérum Anti-âge</li>
+                                <li class=\"text-muted\">Crème peau sèche</li>
+                                <li class=\"text-muted\">Crème peau grasse</li>
+                                <li class=\"text-muted\">Soin Liftant</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Maquillage</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Rouge à lèvres</li>
+                                <li class=\"text-muted\">Vernis à ongles</li>
+                                <li class=\"text-muted\">Mascara</li>
+                                <li class=\"text-muted\">Crayon et feutre à yeux, eye liner</li>
+                                <li class=\"text-muted\">Fard à paupières</li>
+                                <li class=\"text-muted\">Fond de teint fluide</li>
+                                <li class=\"text-muted\">Poudre teint et compact</li>
+                                <li class=\"text-muted\">Correcteurs de teint</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Yeux et lèvres</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Soins anti-poches et cernes</li>
+                                <li class=\"text-muted\">Contour des yeux</li>
+                                <li class=\"text-muted\">Démaquillants yeux</li>
+                                <li class=\"text-muted\">Sticks baumes lèvres et réparateurs</li>
+                                <li class=\"text-muted\">Anti-âge yeux</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Démaquillants, nettoyants visage</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Lait, mousse, émulsion</li>
+                                <li class=\"text-muted\">Gel, crème, huile</li>
+                                <li class=\"text-muted\">Eau, tonique, lotion</li>
+                                <li class=\"text-muted\">Cotons démaquillants, lingettes et éponges</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins peau grasse, mixte et acné</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Nettoyage</li>
+                                <li class=\"text-muted\">Purifiants</li>
+                                <li class=\"text-muted\">Matifiants</li>
+                                <li class=\"text-muted\">Soins spécifiques</li>
+                                <li class=\"text-muted\">Soins teintés</li>
+                                <li class=\"text-muted\">Peaux à imperfections</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+                    <!--*************************************************************************************************-->
+
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"visageDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" >
+                        Cheveux
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"visageDropdown\" style=\"min-width: 1200px; border-radius: 10px; left: -85px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Shampoing</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Shampoing doux et fréquent</li>
+                                <li class=\"text-muted\">Shampoing antipelliculaire</li>
+                                <li class=\"text-muted\">Shampoing cheveux gras</li>
+                                <li class=\"text-muted\">Shampoing cheveux secs</li>
+                                <li class=\"text-muted\">Shampoing cheveux colorés</li>
+                                <li class=\"text-muted\">Shampoing cheveux fins, cassants</li>
+                                <li class=\"text-muted\">Shampoing anti-poux</li>
+                                <li class=\"text-muted\">Shampooing sec</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Après-shampooing, soin des cheveux</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">Après-shampoing</li>
+                                <li class=\"text-muted\">Masques, baumes</li>
+                                <li class=\"text-muted\">Soins défrisant et lissant</li>
+                                <li class=\"text-muted\">Soins capillaires</li>
+                                <li class=\"text-muted\">Lotion anti-poux</li>
+                              </ul>
+
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins anti-chute</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">shampoing anti-chute</li>
+                                <li class=\"text-muted\">ampoules et lotions anti-chute</li>
+
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Huiles et sérums</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">sérums et ampoules capillaires</li>
+                                <li class=\"text-muted\">huiles capillaires</li>
+
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Kératine</span>
+                              <ul class=\"list-unstyled ps-3\">
+
+                              </ul>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Capillaire solaire</span>
+                              <ul class=\"list-unstyled ps-3\">
+
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Produits coiffants</span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Coloration</span>
+
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Compléments cheveux et ongles</span>
+
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Proteine Capillaire</span>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+                    <!--*******************************************************************************************************************************************-->
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Corps
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -180px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hydratation et nutrition corps</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">soins hydratation</li>
+                                <li class=\"text-muted\">soins hydratation peaux sèches et atopiques</li>
+                                <li class=\"text-muted\">soins hydratation anti-âge</li>
+                                <li class=\"text-muted\">soins hydratation teintés, bonne mine</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Epilation, dépilation, décoloration</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème et mousse dépilatoire</li>
+                                <li class=\"text-muted\">cire et bandes dépilatoires</li>
+                                <li class=\"text-muted\">epilateur électrique</li>
+                                <li class=\"text-muted\">soins post-épilation</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins spécifiques</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">soins apaisants</li>
+                                <li class=\"text-muted\">peaux squameuses</li>
+                                <li class=\"text-muted\">crème cicatrisante</li>
+                                <li class=\"text-muted\">soins buste et seins</li>
+                                <li class=\"text-muted\">anti cellulite</li>
+                                <li class=\"text-muted\">éclaircissant corps</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Soins des pieds</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">pieds secs et abîmés</li>
+                                <li class=\"text-muted\">pansements pieds et coussinets</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins des mains</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Gommage et exfoliant corps
+          </span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Jambes lourdes
+
+          </span>
+
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Articulations
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Parfum
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Massage
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins minceur
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins repigmentant
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Nettoyant
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Accessoires
+          </span>
+                            </div>
+
+
+
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+                    <!--*************************************************************************************************-->
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link  fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Bébé et maman
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -257px;\">
+
+
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Puériculture</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">biberons</li>
+                                <li class=\"text-muted\">tétines</li>
+                                <li class=\"text-muted\">sucettes</li>
+                                <li class=\"text-muted\">vaisselles de bébé</li>
+                                <li class=\"text-muted\">anneaux de dentitions</li>
+                                <li class=\"text-muted\">accessoires</li>
+                                <li class=\"text-muted\">lunettes</li>
+                              </ul>
+
+                            </div>
+                            <div>
+          <span class=\"fw-semibold text-dark fs-6\">Toilette & soins bébé
+          </span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette & bain de bébé</li>
+                                <li class=\"text-muted\">Hygiène et soins du bébé</li>
+                                <li class=\"text-muted\">hydratation visage et corps</li>
+                                <li class=\"text-muted\">croûtes de lait</li>
+                                <li class=\"text-muted\">massage et colique</li>
+                                <li class=\"text-muted\">protection solaire</li>
+                              </ul>
+
+                            </div>
+                          </div>
+
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Change de bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème de change</li>
+                                <li class=\"text-muted\">lingettes bébé</li>
+                                <li class=\"text-muted\">couches</li>
+                                <li class=\"text-muted\">soins du siège</li>
+                              </ul>
+
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Maman</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">tests de grossesse</li>
+                                <li class=\"text-muted\">allaitement</li>
+                                <li class=\"text-muted\">compléments alimentaires</li>
+                                <li class=\"text-muted\">anti vergetures</li>
+                              </ul>
+                            </div>
+
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Juvénile et jouets</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Trousseaux et cadeaux bébé
+
+          </span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Stérilisateurs
+
+
+          </span>
+
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Chauffe biberon
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Tire lait
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Compléments alimentaires bébé et enfant
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Soins spécifiques bébé et enfant
+
+          </span>
+                            </div>
+                            <div class=\"mb-4\">
+          <span class=\"fw-semibold text-dark fs-6\">Poux & lentes
+          </span>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </ul>
+
+                    </li>
+
+
+
+                    <!--*****************************************************************************************************-->
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Compléments alimentaires
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -414px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Santé</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">mémoire et concentration</li>
+                              <li class=\"text-muted\">circulation sanguine</li>
+                              <li class=\"text-muted\">digestion et transit</li>
+                              <li class=\"text-muted\">confort urinaire</li>
+                              <li class=\"text-muted\">cholestérol et cardiovasculaire</li>
+                              <li class=\"text-muted\">respiratoire</li>
+                              <li class=\"text-muted\">état Grippal</li>
+                              <li class=\"text-muted\">sphère ORL</li>
+                              <li class=\"text-muted\">immunité</li>
+                              <li class=\"text-muted\">anémie</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Minceur</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">ventre plat</li>
+                              <li class=\"text-muted\">draineurs et détox</li>
+                              <li class=\"text-muted\">coupe faim et satiété</li>
+                              <li class=\"text-muted\">brûle graisse</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Confort</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">stress</li>
+                              <li class=\"text-muted\">trouble de sommeil</li>
+                              <li class=\"text-muted\">anxiété</li>
+                              <li class=\"text-muted\">magnésium</li>
+                              <li class=\"text-muted\">articulations</li>
+                              <li class=\"text-muted\">fatigue</li>
+                              <li class=\"text-muted\">anti-douleur</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Fertilité</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">fertilité homme</li>
+                              <li class=\"text-muted\">fertilité femme</li>
+                            </ul>
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">Anti-âge</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">peau</li>
+                              <li class=\"text-muted\">yeux</li>
+                              <li class=\"text-muted\">anti Oxydant</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Ménopause</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Stimulants sexuels</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Prise de poids</span>
+                            </div>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Bébé et enfant</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Beauté</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Anti-cellulite</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Mycoses Vaginales</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <!--**************************************************************************************-->
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Hygiène
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -658px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Puériculture</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">biberons</li>
+                                <li class=\"text-muted\">tétines</li>
+                                <li class=\"text-muted\">sucettes</li>
+                                <li class=\"text-muted\">vaisselles de bébé</li>
+                                <li class=\"text-muted\">anneaux de dentitions</li>
+                                <li class=\"text-muted\">accessoires</li>
+                                <li class=\"text-muted\">lunettes</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Toilette & soins bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette & bain de bébé</li>
+                                <li class=\"text-muted\">Hygiène et soins du bébé</li>
+                                <li class=\"text-muted\">hydratation visage et corps</li>
+                                <li class=\"text-muted\">croûtes de lait</li>
+                                <li class=\"text-muted\">massage et colique</li>
+                                <li class=\"text-muted\">protection solaire</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Change de bébé</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">crème de change</li>
+                                <li class=\"text-muted\">lingettes bébé</li>
+                                <li class=\"text-muted\">couches</li>
+                                <li class=\"text-muted\">soins du siège</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Maman</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">tests de grossesse</li>
+                                <li class=\"text-muted\">allaitement</li>
+                                <li class=\"text-muted\">compléments alimentaires</li>
+                                <li class=\"text-muted\">anti vergetures</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Douche & bain</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">gel douche et savon liquide</li>
+                                <li class=\"text-muted\">savon et pain</li>
+                                <li class=\"text-muted\">bain (moussant, huile, sels, soins)</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins buccodentaires</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">brosses à dents</li>
+                                <li class=\"text-muted\">brosses à dents enfants</li>
+                                <li class=\"text-muted\">brosses à dents électriques</li>
+                                <li class=\"text-muted\">dentifrices</li>
+                                <li class=\"text-muted\">bain de bouche et solution gingivale</li>
+                                <li class=\"text-muted\">fil dentaire, brossette & accessoires</li>
+                                <li class=\"text-muted\">haleine</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hygiène intime</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">toilette intime</li>
+                                <li class=\"text-muted\">lingettes intimes</li>
+                                <li class=\"text-muted\">serviettes hygiéniques et tampons</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Déodorants et anti-transpirants</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">déodorant aisselles</li>
+                                <li class=\"text-muted\">déodorant pieds</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Nez et oreilles</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">hygiène nasale</li>
+                                <li class=\"text-muted\">protection et nettoyage auriculaire</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Sexualité</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">préservatif</li>
+                                <li class=\"text-muted\">lubrifiant</li>
+                              </ul>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Hygiène des mains</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">gels hydroalcooliques et antibactériens</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Solaires
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -658px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">protection inférieure à spf 20</li>
+                                <li class=\"text-muted\">protection de spf 20 à 49</li>
+                                <li class=\"text-muted\">protection supérieure à spf 50+</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires enfant</span>
+
+                            </div>
+                          </div>
+
+                          <!-- Second Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Soins après-soleil</span>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Stick lèvres solaire</span>
+                            </div>
+                          </div>
+
+                          <!-- Third Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Préparateurs solaires et autobronzant</span>
+
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Pack solaire</span>
+                            </div>
+
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Vichyanthelios</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"corpsDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Bio & naturel
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"corpsDropdown\" id=\"corpsDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -920px;\">
+                        <div class=\"row g-4\">
+                          <!-- First Column -->
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Aromathéraphie</span>
+                              <ul class=\"list-unstyled ps-3\">
+                                <li class=\"text-muted\">huiles essentielles</li>
+                                <li class=\"text-muted\">huiles végétales</li>
+                                <li class=\"text-muted\">sérum</li>
+                                <li class=\"text-muted\">diffuseurs, parfums d_ambiance</li>
+                                <li class=\"text-muted\">hydrolat</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <span class=\"fw-semibold text-dark fs-6\">Thés et tisanes</span>
+
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Matériel médical
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -1114px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Alitement</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">couches adulte</li>
+                              <li class=\"text-muted\">matelas</li>
+                              <li class=\"text-muted\">pansements</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Appareils de mesure</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">glucomètres</li>
+                              <li class=\"text-muted\">oxymètres de pouls</li>
+                              <li class=\"text-muted\">pèses personnes</li>
+                              <li class=\"text-muted\">tensiomètres</li>
+                              <li class=\"text-muted\">thermomètre</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Mobilité</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">cannes</li>
+                              <li class=\"text-muted\">fauteuils roulants</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Aérosol</span>
+
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">aide auditive</span>
+
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Appareil de massage</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">orthopédie</span>
+                            </div>
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">PROTECTION DE L’OREILLE</span>
+                            </div>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">Sport</span>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+
+
+                    <li class=\"nav-item dropdown\">
+                      <a class=\"nav-link fs-7\" href=\"#\" id=\"santeDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                        Homme
+                      </a>
+                      <ul class=\"dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4\" aria-labelledby=\"santeDropdown\" id=\"santeDropdownMenu\" style=\"min-width: 1200px; border-radius: 10px; left: -1214px;\">
+                        <div class=\"row g-4\">
+                          <!-- Row 1 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Cheveux homme</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">anti-pelliculaire</li>
+                              <li class=\"text-muted\">Fortifiant et anti-chute</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Soin visage homme</span>
+                            <ul class=\"list-unstyled ps-3\">
+                              <li class=\"text-muted\">anti-âge et anti-fatigue homme</li>
+                              <li class=\"text-muted\">nettoyants visage homme</li>
+                              <li class=\"text-muted\">soins hydratants homme</li>
+                            </ul>
+                          </div>
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Crèmes solaires</span>
+                          </div>
+                        </div>
+
+                        <div class=\"row g-4\">
+                          <!-- Row 2 -->
+                          <div class=\"col-md-4\">
+                            <span class=\"fw-semibold text-dark fs-6\">Déodorant homme</span>
+
+                            <span class=\"fw-semibold text-dark fs-6 mt-4\">Douche et bain homme</span>
+
+                          </div>
+                          <div class=\"col-md-4\">
+                            <div class=\"mb-4\">
+                              <span class=\"fw-semibold text-dark fs-6\">rasage _ après-rasage</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class=\"paste-button\">
+                        <button class=\"button\">   <i class=\"fa fa-bars\"></i>
+                        </button>
+                        <div class=\"dropdown-content\">
+                          <a id=\"top\" href=\"#\"> Promos</a>
+                          <a id=\"middle\" href=\"#\"> Nouveautés</a>
+                          <a id=\"bottom\" href=\"#\">Bons Plans</a>
+                          <a id=\"bottom\" href=\"#\">Nos coffrets</a>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+      <section id=\"slider\">
+        <div id=\"carouselExampleCaptions\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+          <div class=\"carousel-inner\">
+            <div class=\"carousel-item active\">
+              <img src=\"img/1.jpg\" class=\"d-block w-100\" alt=\"...\" >
+              <div class=\"carousel-caption \">
+                <h5>
+                </h5>
+              </div>
+            </div>
+            <div class=\"carousel-item\">
+              <img src=\"img/2.jpg\" class=\"d-block w-100\" alt=\"...\">
+              <div class=\"carousel-caption \">
+                <h5>
+                </h5>
+              </div>
+            </div>
+            <div class=\"carousel-item\">
+              <img src=\"img/4.jpg\" class=\"d-block w-100\" alt=\"...\">
+              <div class=\"carousel-caption \">
+                <h5></h5>
+              </div>
+            </div>
+          </div>
+          <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\"
+                  data-bs-slide=\"prev\">
+            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
+            <span class=\"visually-hidden\">Previous</span>
+          </button>
+          <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExampleCaptions\"
+                  data-bs-slide=\"next\">
+            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
+            <span class=\"visually-hidden\">Next</span>
+          </button>
+        </div>
+      </section>
+      <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\"
+              integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\"
+              crossorigin=\"anonymous\"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class=\"py-3\" style=\"background-image: url('{{ asset('images/background-pattern.jpg') }}'); background-repeat: no-repeat; background-size: cover;\">
+
+        <div class=\"container-fluid\">
+          <div class=\"row\">
+            <div class=\"col-md-12\">
+
+              <div class=\"banner-blocks\">
+
+                <div class=\"banner-ad large bg-info block-1\">
+                  <div class=\"swiper main-swiper\">
+                    <div class=\"swiper-wrapper\">
+                      <!-- Slide 1 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-6 bg-light shadow rounded\">
+                          <!-- Main Product Image -->
+                          <img src=\"{{ asset('images/image1.png') }}\" class=\"img-fluid\" alt=\"Parapharmacie Products\">
+
+                          <!-- Content Section -->
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase fw-bold\" style=\"color: #2db5a3;\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-outline-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Slide 2 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-8 bg-light shadow rounded\">
+                          <img src=\"{{ asset('images/image2.png') }}\" class=\"img-fluid\" alt=\"Parapharmacie Products\">
+
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase text-primary fw-bold\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Acheter maintenant
+                            </a>
+                          </div>
+                          <div class=\"img-wrapper col-md-5 text-center\">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Slide 3 -->
+                      <div class=\"swiper-slide\">
+                        <div class=\"row banner-content align-items-center p-6 bg-light shadow rounded\">
+                          <!-- Main Product Image -->
+                          <img src=\"{{ asset('images/image3.png') }}\" class=\"img-fluid\" alt=\"Parapharmacy Products\">
+                          <div class=\"content-wrapper col-md-7 text-center text-md-start\">
+                            <div class=\"categories my-3 text-uppercase text-primary fw-bold\">100% Natural</div>
+                            <h3 class=\"display-4 fw-bold text-dark\">Essential Parapharmacie Products</h3>
+                            <p class=\"text-muted\">Discover high-quality parapharmacie essentials for your health and well-being. Everything you need in one place, delivered to your doorstep.</p>
+                            <a href=\"#\" class=\"btn btn-success btn-lg text-uppercase fs-6 rounded-pill px-5 py-3 mt-3\">Shop Now</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Customized Swiper Pagination -->
+                    <div class=\"swiper-pagination swiper-pagination-bullets\"></div>
+                  </div>
+                </div>
+
+                <div class=\"banner-ad bg-success-subtle block-2\" style=\"background: url('{{ asset('images/visage1.png') }}') no-repeat; background-size: cover; background-position: center;\">
+                  <div class=\"row banner-content p-5\">
+
+                  </div>
+                </div>
+
+
+
+                <div class=\"banner-ad bg-success-subtle block-3\" style=\"background: url('{{ asset('images/visage2.png') }}') no-repeat; background-size: cover; background-position: center;\">
+                  <div class=\"row banner-content p-5\">
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- / Banner Blocks -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class=\"py-5 overflow-hidden\">
+        <div class=\"container-fluid\">
+          <div class=\"row align-items-center justify-content-center\"> <!-- Flexbox alignment -->
+
+            <!-- Left side: Images stacked vertically -->
+            <div class=\"col-12 col-md-6 d-flex flex-column align-items-center\">
+              <img src=\"{{ asset('images/f1.jpg') }}\" alt=\"Category\" class=\"img-fluid mb-3 w-100\" style=\"max-width: 700px; height: auto;\">
+              <img src=\"{{ asset('images/f2.jpg') }}\" alt=\"Category\" class=\"img-fluid w-100\" style=\"max-width: 700px; height: auto;\">
+            </div>
+
+            <!-- Right side: Product display -->
+
+
+
+            <div class=\"product-wrapper col-md-5\" style=\"height: auto\" >
+              <div class=\"container\">
+                <div class=\"row\">
+
+                  <div class=\"col-lg-12\">
+                    <div class=\"home_deals_title\">
+
+                      <h4 style=\"color: #1DBF72; font-weight: bold \" > <i class=\"fas fa-gift\" style=\"margin-right: 8px;\"></i>&nbsp;&nbsp; Special offer</h4>
+                    </div>
+
+                    <div class=\"product-img-main-active d-flex flex-wrap justify-content-start\">
+                      {% for p in products %}
+                        {% if p.getType() == 'SO' %}
+                          <div class=\"product-img-box text-center\">
+
+                            <p><i class=\"far fa-check-circle\"></i> In stock</p>
+
+                            <img class=\"img-fluid\" src=\"{{ p.imagePath }}\" alt=\"\" style=\"display: block; margin: 0 auto;\">
+                            <div class=\"card-client\">
+
+                              <div class=\"name-client\"> {{ p.brand }}
+                                <span>{{ p.title }}
+                          </span>
+
+                                <span> <h3 style=\"color:white; display: inline;\">{{ p.originalPrice }} TTC &nbsp;  <del  style=\"display: inline; font-size:20px;\">{{ p.price }}</del></h3>
+</span>
+
+                                <button class=\"btn btn-light mt-2\" style=\"color:#1DBF72; font-size: 18px ; width: 200px ; text-align:left \">Ajouter au panier</button>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+
+                    <div class=\"product-img-mini-active d-flex flex-column justify-content-center\">
+                      {% for p in products %}
+                        {% if p.getType() == 'SO' %}
+                          <img class=\"img-fluid m-1\" src=\"{{ p.imagePath }}\" alt=\"\">
+
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+
+        <div class=\"row\">
+          <div class=\"col-md-12\">
+
+            <div class=\"bootstrap-tabs product-tabs\">
+              <div class=\"tabs-header d-flex justify-content-between border-bottom my-5\">
+                <h3>Produits tendance</h3>
+              </div>
+
+              <div class=\"tab-content\" id=\"nav-tabContent\">
+                <div class=\"tab-pane fade show active\" id=\"nav-all\" role=\"tabpanel\" aria-labelledby=\"nav-all-tab\">
+
+                  <!-- Product Grid with Responsive Columns -->
+                  <div class=\"product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3\">
+                    {% for p in products %}
+                      {% if p.getType() == 'PT' %}
+                        <div class=\"col\" id=\"col\" data-product-imagePath=\"{{ p.imagePath }}\" data-product-id=\"{{ p.id }}\" data-product-title=\"{{ p.title }}\" data-product-brand=\"{{ p.brand }}\" data-product-price=\"{{ p.price }}\">
+                          <div class=\"product-item\">
+                            <span class=\"badge bg-success position-absolute m-3\">-30%</span>
+                            <a href=\"#\" class=\"btn-wishlist\">
+                              <svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg>
+                            </a>
+                            <figure class=\"text-center p-3\">
+                              <a href=\"{{ path('product_piece', {'id': p.id}) }}\">
+                                <img src=\"{{ p.imagePath }}\" class=\"img-fluid img-first lazyload lazyloaded\" alt=\"{{ p.title }}\">
+                              </a>
+                            </figure>
+                            <h5>{{ p.brand }}</h5>
+                            <p>{{ p.title }}</p>
+                            <span class=\"qty\">1 Unit</span>
+                            <span class=\"rating\">
+                          <svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5
+                        </span>
+                            <span class=\"price\">{{ p.price }} </span>
+
+                            <div class=\"d-flex align-items-center justify-content-between mt-2\">
+                              <div class=\"input-group product-qty\">
+                                <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\">-</button>
+                                <input type=\"number\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number quantity\" value=\"1\" min=\"1\">
+                                <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\">+</button>
+                              </div>
+                              <button class=\"cart-button add-to-cart\">
+                                <svg class=\"cart-icon\" stroke=\"currentColor\" stroke-width=\"1.5\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">
+                                  <path d=\"M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z\" stroke-linejoin=\"round\" stroke-linecap=\"round\"></path>
+                                </svg>
+                                <span>Ajouter au panier</span>
+                              </button>
+                            </div>
+
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  <!-- End Product Grid -->
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+
+          <div class=\"col-md-6\">
+            <div class=\"banner-ad bg-danger mb-3\" style=\"background: url('{{ asset('images/f.png') }}') no-repeat; background-position: right bottom;\">
+              <div class=\"banner-content p-5\">
+
+                <div class=\"categories text-primary fs-3 fw-bold\">Upto 25% Off</div>
+                <h3 class=\"banner-title\">Parapharmacie</h3>
+                <p>Wide range of health and wellness products to keep you feeling great.</p>
+                <a href=\"#\" class=\"btn btn-dark text-uppercase\">Shop Now</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col-md-6\">
+            <div class=\"banner-ad bg-info\" style=\"background: url('{{ asset('images/f2.png') }}') no-repeat; background-position: right bottom;\">
+              <div class=\"banner-content p-5\">
+
+                <div class=\"categories text-primary fs-3 fw-bold\">Upto 25% Off</div>
+                <h3 class=\"banner-title\">Creamy Muffins</h3>
+                <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
+                <a href=\"#\" class=\"btn btn-dark text-uppercase\">Show Now</a>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class=\"py-5 overflow-hidden\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"col-12\">
+
+            <div class=\"section-header d-flex flex-wrap justify-content-between my-3\">
+
+              <h2 class=\"section-title w-100 text-center text-md-start fs-5\">Les produits les plus vendus</h2>
+
+              <div class=\"d-flex flex-wrap align-items-center justify-content-between w-100\">
+                <a href=\"#\" class=\"btn-link text-decoration-none mb-2 mb-md-0 fs-6\"></a>
+                <div class=\"swiper-buttons d-flex justify-content-center\">
+                  <button class=\"swiper-prev products-carousel-prev btn btn-primary btn-sm p-1 fs-4 me-1\">❮</button>
+                  <button class=\"swiper-next products-carousel-next btn btn-primary btn-sm p-1 fs-4 ms-1\">❯</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class=\"row\">
+          <div class=\"col-md-12\">
+
+            <div class=\"products-carousel swiper\">
+              <div class=\"swiper-wrapper\">
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img1.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>PHYTOCYANE TRAITEMENT ANTI-CHUTE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">115,148 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img2.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>BIOXSINE SHAMPOOING ANTI CHUTE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">42,999 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img3.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>ACM NOVOPHANE CHRONIC LOTION</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">88,536 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <span class=\"badge bg-success position-absolute m-3\">-15%</span>
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img4.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>SENSILIS SKIN LAB TROUSSE PHOTOCORRECTION</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">94,284 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img5.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>FILORGA COFFRET OPTIM EYES</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">116,520 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"https://pharma-shop.tn/24420-home_default/cytol-clean-gel-nettoyant-purifiant-175ml.webp\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>NOVEXPERT COFFRET VOYAGE AU COEUR DE L'ACIDE HYALURONIQUE</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">193,838 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img7.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>AVENE CICALFATE+ CREME</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">56,000 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+                <div class=\"product-item swiper-slide\">
+                  <a href=\"#\" class=\"btn-wishlist\"><svg width=\"24\" height=\"24\"><use xlink:href=\"#heart\"></use></svg></a>
+                  <figure>
+                    <a href=\"index.html\" title=\"Product Title\">
+                      <img src=\"{{ asset('images/img8.png') }}\" class=\"tab-image\">
+                    </a>
+                  </figure>
+                  <h3>GLUTA LIGHT 14 STICKS</h3>
+                  <span class=\"qty\">1 Unit</span><span class=\"rating\"><svg width=\"24\" height=\"24\" class=\"text-primary\"><use xlink:href=\"#star-solid\"></use></svg> 4.5</span>
+                  <span class=\"price\">74,443 TND</span>
+                  <div class=\"d-flex align-items-center justify-content-between\">
+                    <div class=\"input-group product-qty\">
+                        <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-left-minus btn btn-danger btn-number\" data-type=\"minus\">
+                              <svg width=\"16\" height=\"16\"><use xlink:href=\"#minus\"></use></svg>
+                            </button>
+                        </span>
+                      <input type=\"text\" id=\"quantity\" name=\"quantity\" class=\"form-control input-number\" value=\"1\">
+                      <span class=\"input-group-btn\">
+                            <button type=\"button\" class=\"quantity-right-plus btn btn-success btn-number\" data-type=\"plus\">
+                                <svg width=\"16\" height=\"16\"><use xlink:href=\"#plus\"></use></svg>
+                            </button>
+                        </span>
+                    </div>
+                    <a href=\"#\" class=\"nav-link\">Add to Cart <iconify-icon icon=\"uil:shopping-cart\"></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- / products-carousel -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id=\"latest-blog\" class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"section-header d-flex align-items-center justify-content-between my-5\">
+            <h2 class=\"section-title\">Articles de blog</h2>
+            <div class=\"btn-wrap align-right\">
+              <a href=\"#\" class=\"d-flex align-items-center nav-link\"> <svg width=\"24\" height=\"24\"><use xlink:href=\"#arrow-right\"></use></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class=\"row\">
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"{{ asset('images/dentaire.png') }}\" alt=\"post\" style=\"width: 100%; max-width: 1000px; height: auto;\" class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>22 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>tips & tricks</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Qu'est-ce qui explique l'apparition des caries même après l'âge de 70 ans ?</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"{{ asset('images/sante.png') }}\" alt=\"post\"  class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>25 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>trending</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Tout ce qu'il faut savoir sur Vitrobio et Naturveda dans le domaine de la santé</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class=\"col-md-4\">
+            <article class=\"post-item card border-0 shadow-sm p-3\">
+              <div class=\"image-holder zoom-effect\">
+                <a href=\"#\">
+                  <img src=\"{{ asset('images/soumel.png') }}\" alt=\"post\" class=\"card-img-top\">
+                </a>
+              </div>
+              <div class=\"card-body\">
+                <div class=\"post-meta d-flex text-uppercase gap-3 my-2 align-items-center\">
+                  <div class=\"meta-date\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#calendar\"></use></svg>28 Aug 2021</div>
+                  <div class=\"meta-categories\"><svg width=\"16\" height=\"16\"><use xlink:href=\"#category\"></use></svg>inspiration</div>
+                </div>
+                <div class=\"post-header\">
+                  <h3 class=\"post-title\">
+                    <a href=\"#\" class=\"text-decoration-none\">Quelle semelle est recommandée pour soulager une épine calcanéenne ?</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                  <a href=\"#\" class=\"text-decoration-none read-more\">Lire la suite</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row\">
+          <div class=\"col-12\">
+            <div class=\"text-content\">
+              <p class=\"lead\">
+
+              <h1>Parapharmacie en ligne N°1 en Tunisie : Des produits de qualité pour votre bien-être</h1><br>
+
+              Soyez belle et rayonnante tout au long de l’année grâce à votre <strong>1ère parapharmacie en ligne en Tunisie.</strong>
+              </p>
+              <p>
+                À la recherche de produits de qualité pour prendre soin de votre santé et de votre beauté ? Nous proposons un catalogue de plus de 7000 produits et les marques des plus grands laboratoires.
+              </p>
+              <p>
+              <p>Notre sélection de produits inclut des <span style=\"color:#1DBF72;\">crèmes solaires</span>, des <span style=\"color:#1DBF72;\">compléments alimentaires</span>, des soins de santé naturels, des produits cosmétiques, des articles pour <span style=\"color:#1DBF72;\">bébés et enfants</span>, ainsi que des solutions pour le bien-être général. Nous proposons aussi des produits adaptés aux sportifs (musculation, protéines, etc.) et pour vos animaux de compagnie (<span style=\"color:#1DBF72;\">chiens et chats</span>).</p>
+
+              <p>
+                Nous travaillons avec des marques reconnues dans le monde entier (Avène, Nuxe, Filorga, ...) pour vous offrir les meilleurs produits de parapharmacie 100% authentiques. Nous sommes fiers de proposer des produits de qualité supérieure qui répondent à toutes les normes de sécurité et de qualité. En effet, tous nos produits sont certifiés authentiques et recommandés par les meilleurs dermatologues.
+              </p>
+              <p>
+                Commander sur seasidecare.shop.com est facile et sécurisé. Nous proposons une livraison rapide et fiable partout en Tunisie. Notre équipe de professionnels est à votre disposition pour vous conseiller et vous guider dans le choix des produits les plus adaptés à vos besoins et pour vous assister dans le processus de commande et de suivi de votre livraison.
+              </p>
+              <p>
+                Chez votre parapharmacie en ligne seasidecare.shop.com, nous sommes convaincus que vous trouverez les produits dont vous avez besoin. N'hésitez pas à parcourir notre site pour découvrir nos gammes de produits pour Femmes, Hommes et Enfants.
+              </p>
+              <p>
+                Nous proposons également régulièrement des promos et des bons plans qui vous permettront de vous faire plaisir sans vous ruiner en profitant des prix les moins chers en Tunisie pour des produits hauts de gamme.
+              </p>
+              <p>
+                Avec des milliers de clientes satisfaites, seasidecare.shop.com s'est positionnée depuis plusieurs années comme le leader des parapharmacies en Tunisie et nous sommes constamment en train d'innover afin de vous offrir la meilleure expérience client et rendre votre visite sur notre site plus agréable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class=\"py-5\">
+      <div class=\"container-fluid\">
+        <div class=\"row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-4\">
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-primary text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M21.5 15a3 3 0 0 0-1.9-2.78l1.87-7a1 1 0 0 0-.18-.87A1 1 0 0 0 20.5 4H6.8l-.33-1.26A1 1 0 0 0 5.5 2h-2v2h1.23l2.48 9.26a1 1 0 0 0 1 .74H18.5a1 1 0 0 1 0 2h-13a1 1 0 0 0 0 2h1.18a3 3 0 1 0 5.64 0h2.36a3 3 0 1 0 5.82 1a2.94 2.94 0 0 0-.4-1.47A3 3 0 0 0 21.5 15Zm-3.91-3H9L7.34 6H19.2ZM9.5 20a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">livraison gratuite</h5>
+                  <p class=\"card-text text-muted mb-0\">Profitez de la livraison gratuite sur toutes les commandes, sans minimum requis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-success text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78ZM18 11.88a7 7 0 0 1-2.93 5.7L12 19.77l-3.07-2.19A7 7 0 0 1 6 11.88v-6.3a10 10 0 0 0 6-1.39a10 10 0 0 0 6 1.39Zm-4.46-2.29l-2.69 2.7l-.89-.9a1 1 0 0 0-1.42 1.42l1.6 1.6a1 1 0 0 0 1.42 0L15 11a1 1 0 0 0-1.42-1.42Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Paiement 100% sécurisé</h5>
+                  <p class=\"card-text text-muted mb-0\">Vos paiements sont traités en toute sécurité grâce à la dernière technologie de cryptage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-danger text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Zm-7 2h2v3a1 1 0 0 1-2 0Zm-4 0h2v3a1 1 0 0 1-2 0ZM7 7h2v3a1 1 0 0 1-2 0Zm-3 4a1 1 0 0 1-1-1V7h2v3a1 1 0 0 1-1 1Zm10 10h-4v-2a2 2 0 0 1 4 0Zm5 0h-3v-2a4 4 0 0 0-8 0v2H5v-8.18a3.17 3.17 0 0 0 1-.6a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3.17 3.17 0 0 0 1 .6Zm2-11a1 1 0 0 1-2 0V7h2ZM4.3 3H20a1 1 0 0 0 0-2H4.3a1 1 0 0 0 0 2Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Garantie de qualité</h5>
+                  <p class=\"card-text text-muted mb-0\">Nous garantissons une haute qualité grâce à des tests rigoureux et assurons votre satisfaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-warning text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M12 8.35a3.07 3.07 0 0 0-3.54.53a3 3 0 0 0 0 4.24L11.29 16a1 1 0 0 0 1.42 0l2.83-2.83a3 3 0 0 0 0-4.24A3.07 3.07 0 0 0 12 8.35Zm2.12 3.36L12 13.83l-2.12-2.12a1 1 0 0 1 0-1.42a1 1 0 0 1 1.41 0a1 1 0 0 0 1.42 0a1 1 0 0 1 1.41 0a1 1 0 0 1 0 1.42ZM12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 2.26 6.33l-2 2a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20Zm0 18H5.41l.93-.93a1 1 0 0 0 0-1.41A8 8 0 1 1 12 20Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Économies garanties</h5>
+                  <p class=\"card-text text-muted mb-0\">Économisez davantage avec nos réductions et offres exclusives chaque jour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=\"col\">
+            <div class=\"card border-0 h-100 shadow-lg rounded-3 overflow-hidden\">
+              <div class=\"card-body d-flex align-items-center p-4\">
+                <div class=\"icon-container rounded-circle bg-info text-white p-3 me-3\">
+                  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\">
+                    <path fill=\"currentColor\" d=\"M18 7h-.35A3.45 3.45 0 0 0 18 5.5a3.49 3.49 0 0 0-6-2.44A3.49 3.49 0 0 0 6 5.5A3.45 3.45 0 0 0 6.35 7H6a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h1v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6h1a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3Zm-7 13H8a1 1 0 0 1-1-1v-6h4Zm0-9H5v-1a1 1 0 0 1 1-1h5Zm0-4H9.5A1.5 1.5 0 1 1 11 5.5Zm2-1.5A1.5 1.5 0 1 1 14.5 7H13ZM17 19a1 1 0 0 1-1 1h-3v-7h4Zm2-8h-6V9h5a1 1 0 0 1 1 1Z\"/>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class=\"fw-bold text-dark mb-2\">Daily Offers</h5>
+                  <p class=\"card-text text-muted mb-0\">Get exclusive deals every day for limited-time offers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+      <div class=\"container\">
+        <div class=\"row\">
+
+          <div class=\"col-lg-3 col-md-6 col-sm-6\">
+            <div class=\"footer-about\">
+              <div class=\"footer-logo\">
+                <img src=\"{{ asset('images/SEASIDECAREtest.png') }}\" alt=\"post\"  style=\"width:250px ; height: auto\" >
+              </div>
+              <p>Seasidecare.shop.com est la parapharmacie en ligne numéro 1 en Tunisie. Découvrez une large gamme de produits parapharmaceutiques, allant de la beauté à la santé, en passant par le bien-être et la minceur, directement depuis chez vous.</p>
+              <a href=\"#\"><img src=\"img/payment.png\" alt=\"\"></a>
+            </div>
+          </div>
+
+          <div class=\"col-lg-2 offset-lg-1 col-md-3 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Informations</h6>
+              <ul>
+                <li><a href=\"#\">Promotions</a></li>
+                <li><a href=\"#\">Nouveaux produits</a></li>
+                <li><a href=\"#\">Meilleures ventes</a></li>
+                <li><a href=\"#\">Contactez-nous</a></li>
+                <li><a href=\"#\">Conditions d'utilisation</a></li>
+                <li><a href=\"#\">A propos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class=\"col-lg-2 col-md-3 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Mon Compte</h6>
+              <ul>
+                <li><a href=\"#\">Mes commandes</a></li>
+                <li><a href=\"#\">Mes avoirs</a></li>
+                <li><a href=\"#\">Mes adresses</a></li>
+                <li><a href=\"#\">Mes informations personnelles</a></li>
+                <li><a href=\"#\">Mes bons de réduction</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class=\"col-lg-3 offset-lg-1 col-md-6 col-sm-6\">
+            <div class=\"footer-widget\">
+              <h6>Service Client</h6>
+              <p style=\"color: white\" >Tél: <p style=\"color: white; font-size: 13px \"  > +216 24 006 483</p></p>
+              <p style=\"color: white\" >Email: <a href=\"mailto:contact@seasidecare\" style=\"color: white; font-size: 13px \" >contact@seasidecare</a></p>
+              <div class=\"footer-newslatter\">
+                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                <form action=\"#\">
+                  <input type=\"text\" placeholder=\"Your Email\">
+                  <button type=\"submit\"><span><i class=\"fa fa-envelope\" arial-hidden=\"true\"></i></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class=\"row\">
+          <div class=\"col-lg-12 text-center\">
+            <div class=\"footer-copyright-text\">
+              <p>Copyright &copy; 2025 All rights reserved <i class=\"fa fa-heart-o\" arial-hidden=\"true\"></i>
+                by <a href=\"#\">Dasinformatique</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <script src=\"{{ asset('js/jquery-1.11.0.min.js') }}\"></script>
+    <script src=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js\"></script>
+    <script src=\"{{ asset('js/plugins.js') }}\"></script>
+    <script src=\"{{ asset('js/script.js') }}\"></script>
+</body>
+<script src=\"js/bootstrap.min.js\"></script>
+
+<script src=\"js/jquery.nice-number.js\"></script>
+<script src=\"js/slick.min.js\"></script>
+<script>
+
+  \$('.product-img-main-active').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.product-img-mini-active',
+    arrows: true,
+    autoplaySpeed: 3000,
+    prevArrow:'<button type=\"button\" class=\"slick-prev\"><i class=\"fa fa-arrow-left\"></i></button>',
+    nextArrow:'<button type=\"button\" class=\"slick-next\"><i class=\"fa fa-arrow-right\"></i></button>',
+  });
+  \$('.product-img-mini-active').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-img-main-active',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: true,
+    prevArrow:'<button type=\"button\" class=\"slick-prev\"><i class=\"fa fa-arrow-left\"></i></button>',
+    nextArrow:'<button type=\"button\" class=\"slick-next\"><i class=\"fa fa-arrow-right\"></i></button>',
+  });
+
+  // product counter start
+  \$(function(){
+    \$('.product-spinner input[type=\"number\"]').niceNumber();
+  });
+
+
+
+
+</script>
+
+</html>
+<link href=\"https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css\" rel=\"stylesheet\">
+
+<!-- SweetAlert2 JS -->
+<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>", "index.html.twig", "C:\\Users\\HP\\OneDrive\\Bureau\\seaside_care\\seasidecare_project-main\\templates\\index.html.twig");
+    }
+}

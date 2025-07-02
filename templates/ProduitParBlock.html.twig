@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>parapharmacie</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/vendor.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<style>
+
+
+    /*footer design*/
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        background-color: #00453c;
+        color: #fff;
+        padding: 70px 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        color:white;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+    }
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+    ul li a {
+        color: #bdc3c7;
+        text-decoration: none;
+        font-size: 1rem;
+        display: block;
+        padding: 5px 0;
+    }
+
+    ul li a:hover {
+        color: #e74c3c;
+    }
+
+    /* Social Media Styles */
+    .footer-social .social-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    .footer-social .social-icon {
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-social .social-icon:hover {
+        color: #e74c3c;
+    }
+
+    /* Subscribe Form Styles */
+    .footer-subscribe .newsletter-form {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-subscribe input[type="email"] {
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .footer-subscribe button {
+        padding: 12px 20px;
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .footer-subscribe button:hover {
+        background-color: #c0392b;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 991px) {
+        .footer .col-md-2 {
+            margin-bottom: 20px;
+        }
+
+        .footer .col-lg-3 {
+            text-align: center;
+        }
+    }
+
+
+
+    /************************************/
+
+</style>
+
+
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+            <path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z"/>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+            <path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/>
+        </symbol>
+    </defs>
+</svg>
+
+<div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="MyCart">
+    <div class="offcanvas-header justify-content-center border-bottom">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <!-- Cart Header with Icon -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="loader">
+                <div class="truckWrapper">
+                    <div class="truckBody">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 198 93"
+                                class="trucksvg"
+                        >
+                            <path
+                                    stroke-width="3"
+                                    stroke="#282828"
+                                    fill="#F83D3D"
+                                    d="M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z"
+                            ></path>
+                            <path
+                                    stroke-width="3"
+                                    stroke="#282828"
+                                    fill="#7D7C7C"
+                                    d="M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z"
+                            ></path>
+                            <path
+                                    stroke-width="2"
+                                    stroke="#282828"
+                                    fill="#282828"
+                                    d="M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z"
+                            ></path>
+                            <rect
+                                    stroke-width="2"
+                                    stroke="#282828"
+                                    fill="#FFFCAB"
+                                    rx="1"
+                                    height="7"
+                                    width="5"
+                                    y="63"
+                                    x="187"
+                            ></rect>
+                            <rect
+                                    stroke-width="2"
+                                    stroke="#282828"
+                                    fill="#282828"
+                                    rx="1"
+                                    height="11"
+                                    width="4"
+                                    y="81"
+                                    x="193"
+                            ></rect>
+                            <rect
+                                    stroke-width="3"
+                                    stroke="#282828"
+                                    fill="#DFDFDF"
+                                    rx="2.5"
+                                    height="90"
+                                    width="121"
+                                    y="1.5"
+                                    x="6.5"
+                            ></rect>
+                            <rect
+                                    stroke-width="2"
+                                    stroke="#282828"
+                                    fill="#DFDFDF"
+                                    rx="2"
+                                    height="4"
+                                    width="6"
+                                    y="84"
+                                    x="1"
+                            ></rect>
+                        </svg>
+                    </div>
+                    <div class="truckTires">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                class="tiresvg"
+                        >
+                            <circle
+                                    stroke-width="3"
+                                    stroke="#282828"
+                                    fill="#282828"
+                                    r="13.5"
+                                    cy="15"
+                                    cx="15"
+                            ></circle>
+                            <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                        </svg>
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                class="tiresvg"
+                        >
+                            <circle
+                                    stroke-width="3"
+                                    stroke="#282828"
+                                    fill="#282828"
+                                    r="13.5"
+                                    cy="15"
+                                    cx="15"
+                            ></circle>
+                            <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                        </svg>
+                    </div>
+                    <div class="road"></div>
+
+                    <svg
+                            xml:space="preserve"
+                            viewBox="0 0 453.459 453.459"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="Capa_1"
+                            version="1.1"
+                            fill="#000000"
+                            class="lampPost"
+                    >
+      <path
+              d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
+      ></path>
+    </svg>
+                </div>
+            </div>
+
+            <span class="badge bg-primary rounded-pill">0</span>
+
+        </div>
+
+        <!-- Optional Custom CSS for Animation -->
+
+
+
+        <!-- Cart Items List -->
+        <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center border-0 rounded-3 shadow-sm bg-light">
+                <div class="d-flex align-items-center">
+                    <!-- Product Image -->
+                    <span class="fw-bold text-uppercase text-dark">Total</span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <strong class="display-6 text-primary ms-2">0 TND</strong>
+                </div>
+            </li>
+        </ul>
+
+
+        <!-- Action Buttons -->
+        <div class="d-grid gap-2 mb-4">
+            <button id="checkout-button" class="btn btn-dark">Voir le Panier</button>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-danger" id="clear-cart">Vider le Panier</button>
+        </div>
+        <br>
+        <div class="d-grid gap-2 mb-4">
+            <a href="/order_confirmation" class="btn btn-dark">Voir liste des commandes</a>
+        </div>
+
+        <!-- Optional Footer for Cart -->
+        <div class="offcanvas-footer mt-4 text-center">
+            <small>Une fois que vous êtes prêt, procédez au paiement.</small>
+        </div>
+    </div>
+</div>
+
+<!-- Optional Smooth Animations for Open/Close -->
+
+
+<!-- Optional Custom CSS to refine the look -->
+
+
+<!-- Bootstrap Icons (Ensure you have Bootstrap Icons CDN included in your project) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch" aria-labelledby="Search">
+    <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Rechercher</span>
+            </h4>
+            <form role="search" action="/home" method="get" class="d-flex mt-3 gap-0">
+                <input class="form-control rounded-start rounded-0 bg-light" type="email" placeholder="What are you looking for?" aria-label="What are you looking for?">
+                <button class="btn btn-dark rounded-end rounded-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<header>
+
+    <div class="header_top d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">
+                                <i class="fas fa-phone me-1"></i> 216-24-006-483
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Promotion Message -->
+                <div class="col-md-4 text-center">
+                    <p class="promo_message m-0 small">
+                        <i class="fas fa-truck me-1"></i> Livraison gratuite dès 99 DT d'achat !
+                    </p>
+                </div>
+
+                <!-- Hours -->
+                <div class="col-md-4 text-end">
+                    <span class="time_o small">🕒 8h00 - 18h00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row py-3 border-bottom">
+
+            <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+                <div class="main-logo">
+                    <a href="{{path('home')}}">
+                        <img src="{{ asset('images/logo.png') }}" alt="logo" class="img-fluid" style="max-width: 78%; height: auto; object-fit: contain;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+                <div class="search-bar row bg-light p-2 my-1 rounded-3 shadow-sm align-items-center">
+                    <div class="col-10">
+                        <form id="search-form" action="index.html" method="post">
+                            <input type="text" class="form-control border-0 bg-transparent" placeholder="Cherchez un produit" style="font-size: 0.9rem; padding: 0.4rem;">
+                        </form>
+                    </div>
+                    <div class="col-2 text-center">
+                        <button type="submit" form="search-form" class="btn p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #6c757d;">
+                                <path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-8 col-lg-3 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0">
+                <ul class="d-flex justify-content-end list-unstyled m-0">
+                    <!-- Trigger Button for Sign In -->
+                    <li>
+                        <div class="compte text-end d-none d-lg-block">
+                            <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+    <span class="fs-6 text-muted">
+      <i class="bi bi-person fs-5"></i> Compte
+    </span>
+                            </button>
+                        </div>
+
+                        {% if app.session.get('username') %}
+                            <div class="d-flex align-items-center mt-2">
+                                <span class="fw-bold ms-2">{{ app.session.get('username') }}</span>
+                                <a href="{{ path('app_logout') }}" class="btn btn-danger ms-3">Log Out</a>
+                            </div>
+                        {% endif %}
+                    </li>
+
+                    <!-- Sign In Modal -->
+                    <div class="modal fade {% if app.request.get('showModal') %}show{% endif %}" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" {% if app.request.get('showModal') %}aria-hidden="false" style="display: block;"{% else %}aria-hidden="true" style="display: none;"{% endif %}>
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% if app.request.get('showModal') %}
+                                        <div class="alert alert-danger">
+                                            {{ app.request.get('showModal') }}
+                                        </div>
+                                    {% endif %}
+                                    <form action="/verif_log" method="post">
+                                        <div class="mb-3">
+                                            <label for="emailOrPhone" class="form-label">E-mail Address</label>
+                                            <input type="text" name="email" class="form-control" id="emailOrPhone" placeholder="Enter your email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                                    </form>
+                                </div>
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#createAccountModal">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Account Modal -->
+                    <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="createAccountModalLabel">Create Account</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="POST" action="{{ path('register') }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('register_form') }}">
+
+                                        <div class="mb-3">
+                                            <label for="userName" class="form-label fw-bold">Your Name</label>
+                                            <input type="text" class="form-control" name="userName" id="userName" placeholder="First and last name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="newEmail" class="form-label fw-bold">E-mail Address</label>
+                                            <input type="email" class="form-control" name="newEmail" id="newEmail" placeholder="Enter your email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Password" class="form-label fw-bold">Password</label>
+                                            <input type="password" class="form-control" name="Password" id="Password" placeholder="At least 6 characters" minlength="6" required>
+                                            <div class="form-text">Passwords must be at least 6 characters long.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirmPassword" class="form-label fw-bold">Confirm Password</label>
+                                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                                    </form>
+                                    <div class="text-center mt-3">
+                                        <p>Already have an account?
+                                            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signInModal" data-bs-dismiss="modal">Sign In</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Buttons for Cart and Search (Mobile View) -->
+                    <li class="d-lg-none">
+                        <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                            <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                            <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Cart (Desktop View) -->
+                <div class="cart text-end d-none d-lg-block">
+                    <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+    <span class="fs-6 text-muted position-relative">
+      <i class="bi bi-cart fs-5 position-relative">
+        <span class="cart-badge position-absolute top-0 start-100 translate-middle">
+          0
+        </span>
+      </i>
+     &nbsp; Panier
+    </span>
+                    </button>
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <!-- c la publicité -->
+            <!-- From Uiverse.io by r0n-dev -->
+            <div class="div">
+                <p id="h2">Chez Seaside Care, nous mettons un point d'honneur à proposer des produits de qualité....<span id="lol"></span></p>
+            </div>
+
+
+            <!-- ******************************************   -->
+
+
+
+
+
+            <div class="container-fluid">
+                <div class="row py-3">
+                    <div class="d-flex justify-content-center justify-content-sm-between align-items-center">
+                        <nav class="main-menu d-flex navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+
+
+                                    <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link  fs-7" href="#" id="visageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                                Visage
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="visageDropdown" style="min-width: 1200px; border-radius: 10px;">
+
+
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins hydratants et nourrissants</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Hydratants toutes peaux</li>
+                                                                <li class="text-muted">Hydratants peaux normales à mixtes</li>
+                                                                <li class="text-muted">Hydratants peaux sèches</li>
+                                                                <li class="text-muted">Hydratants peaux intolérantes</li>
+                                                                <li class="text-muted">Hydratants peaux atopiques</li>
+                                                                <li class="text-muted">Soins teintés, bonne mine</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Soins anti-âge et anti-rides</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Premières rides</li>
+                                                                <li class="text-muted">Rides installées</li>
+                                                                <li class="text-muted">Rides marquées, perte de fermeté</li>
+                                                                <li class="text-muted">Sérum Anti-âge</li>
+                                                                <li class="text-muted">Crème peau sèche</li>
+                                                                <li class="text-muted">Crème peau grasse</li>
+                                                                <li class="text-muted">Soin Liftant</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Maquillage</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Rouge à lèvres</li>
+                                                                <li class="text-muted">Vernis à ongles</li>
+                                                                <li class="text-muted">Mascara</li>
+                                                                <li class="text-muted">Crayon et feutre à yeux, eye liner</li>
+                                                                <li class="text-muted">Fard à paupières</li>
+                                                                <li class="text-muted">Fond de teint fluide</li>
+                                                                <li class="text-muted">Poudre teint et compact</li>
+                                                                <li class="text-muted">Correcteurs de teint</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Yeux et lèvres</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Soins anti-poches et cernes</li>
+                                                                <li class="text-muted">Contour des yeux</li>
+                                                                <li class="text-muted">Démaquillants yeux</li>
+                                                                <li class="text-muted">Sticks baumes lèvres et réparateurs</li>
+                                                                <li class="text-muted">Anti-âge yeux</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Démaquillants, nettoyants visage</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Lait, mousse, émulsion</li>
+                                                                <li class="text-muted">Gel, crème, huile</li>
+                                                                <li class="text-muted">Eau, tonique, lotion</li>
+                                                                <li class="text-muted">Cotons démaquillants, lingettes et éponges</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Soins peau grasse, mixte et acné</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Nettoyage</li>
+                                                                <li class="text-muted">Purifiants</li>
+                                                                <li class="text-muted">Matifiants</li>
+                                                                <li class="text-muted">Soins spécifiques</li>
+                                                                <li class="text-muted">Soins teintés</li>
+                                                                <li class="text-muted">Peaux à imperfections</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </ul>
+
+                                        </li>
+
+
+                                        <!--*************************************************************************************************-->
+
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="visageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                                Cheveux
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="visageDropdown" style="min-width: 1200px; border-radius: 10px; left: -85px;">
+
+
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Shampoing</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Shampoing doux et fréquent</li>
+                                                                <li class="text-muted">Shampoing antipelliculaire</li>
+                                                                <li class="text-muted">Shampoing cheveux gras</li>
+                                                                <li class="text-muted">Shampoing cheveux secs</li>
+                                                                <li class="text-muted">Shampoing cheveux colorés</li>
+                                                                <li class="text-muted">Shampoing cheveux fins, cassants</li>
+                                                                <li class="text-muted">Shampoing anti-poux</li>
+                                                                <li class="text-muted">Shampooing sec</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Après-shampooing, soin des cheveux</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">Après-shampoing</li>
+                                                                <li class="text-muted">Masques, baumes</li>
+                                                                <li class="text-muted">Soins défrisant et lissant</li>
+                                                                <li class="text-muted">Soins capillaires</li>
+                                                                <li class="text-muted">Lotion anti-poux</li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins anti-chute</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">shampoing anti-chute</li>
+                                                                <li class="text-muted">ampoules et lotions anti-chute</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Huiles et sérums</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">sérums et ampoules capillaires</li>
+                                                                <li class="text-muted">huiles capillaires</li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Kératine</span>
+                                                            <ul class="list-unstyled ps-3">
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Capillaire solaire</span>
+                                                            <ul class="list-unstyled ps-3">
+
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Produits coiffants</span>
+
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Coloration</span>
+
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Compléments cheveux et ongles</span>
+
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Proteine Capillaire</span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </ul>
+
+                                        </li>
+
+                                        <!--*******************************************************************************************************************************************-->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link  fs-7" href="#" id="corpsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Corps
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="corpsDropdown" id="corpsDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -180px;">
+
+
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Hydratation et nutrition corps</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">soins hydratation</li>
+                                                                <li class="text-muted">soins hydratation peaux sèches et atopiques</li>
+                                                                <li class="text-muted">soins hydratation anti-âge</li>
+                                                                <li class="text-muted">soins hydratation teintés, bonne mine</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Epilation, dépilation, décoloration</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">crème et mousse dépilatoire</li>
+                                                                <li class="text-muted">cire et bandes dépilatoires</li>
+                                                                <li class="text-muted">epilateur électrique</li>
+                                                                <li class="text-muted">soins post-épilation</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins spécifiques</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">soins apaisants</li>
+                                                                <li class="text-muted">peaux squameuses</li>
+                                                                <li class="text-muted">crème cicatrisante</li>
+                                                                <li class="text-muted">soins buste et seins</li>
+                                                                <li class="text-muted">anti cellulite</li>
+                                                                <li class="text-muted">éclaircissant corps</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Soins des pieds</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">pieds secs et abîmés</li>
+                                                                <li class="text-muted">pansements pieds et coussinets</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins des mains</span>
+                                                        </div>
+
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Gommage et exfoliant corps
+          </span>
+
+                                                        </div>
+
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Jambes lourdes
+
+          </span>
+
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Articulations
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Parfum
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Massage
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Soins minceur
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Soins repigmentant
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Nettoyant
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Accessoires
+          </span>
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                </div>
+
+                                            </ul>
+
+                                        </li>
+
+
+                                        <!--*************************************************************************************************-->
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link  fs-7" href="#" id="corpsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Bébé et maman
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="corpsDropdown" id="corpsDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -257px;">
+
+
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Puériculture</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">biberons</li>
+                                                                <li class="text-muted">tétines</li>
+                                                                <li class="text-muted">sucettes</li>
+                                                                <li class="text-muted">vaisselles de bébé</li>
+                                                                <li class="text-muted">anneaux de dentitions</li>
+                                                                <li class="text-muted">accessoires</li>
+                                                                <li class="text-muted">lunettes</li>
+                                                            </ul>
+
+                                                        </div>
+                                                        <div>
+          <span class="fw-semibold text-dark fs-6">Toilette & soins bébé
+          </span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">toilette & bain de bébé</li>
+                                                                <li class="text-muted">Hygiène et soins du bébé</li>
+                                                                <li class="text-muted">hydratation visage et corps</li>
+                                                                <li class="text-muted">croûtes de lait</li>
+                                                                <li class="text-muted">massage et colique</li>
+                                                                <li class="text-muted">protection solaire</li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Change de bébé</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">crème de change</li>
+                                                                <li class="text-muted">lingettes bébé</li>
+                                                                <li class="text-muted">couches</li>
+                                                                <li class="text-muted">soins du siège</li>
+                                                            </ul>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Maman</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">tests de grossesse</li>
+                                                                <li class="text-muted">allaitement</li>
+                                                                <li class="text-muted">compléments alimentaires</li>
+                                                                <li class="text-muted">anti vergetures</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Juvénile et jouets</span>
+                                                        </div>
+
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Trousseaux et cadeaux bébé
+
+          </span>
+
+                                                        </div>
+
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Stérilisateurs
+
+
+          </span>
+
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Chauffe biberon
+
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Tire lait
+
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Compléments alimentaires bébé et enfant
+
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Soins spécifiques bébé et enfant
+
+          </span>
+                                                        </div>
+                                                        <div class="mb-4">
+          <span class="fw-semibold text-dark fs-6">Poux & lentes
+          </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </ul>
+
+                                        </li>
+
+
+
+                                        <!--*****************************************************************************************************-->
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="santeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Compléments alimentaires
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="santeDropdown" id="santeDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -414px;">
+                                                <div class="row g-4">
+                                                    <!-- Row 1 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Santé</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">mémoire et concentration</li>
+                                                            <li class="text-muted">circulation sanguine</li>
+                                                            <li class="text-muted">digestion et transit</li>
+                                                            <li class="text-muted">confort urinaire</li>
+                                                            <li class="text-muted">cholestérol et cardiovasculaire</li>
+                                                            <li class="text-muted">respiratoire</li>
+                                                            <li class="text-muted">état Grippal</li>
+                                                            <li class="text-muted">sphère ORL</li>
+                                                            <li class="text-muted">immunité</li>
+                                                            <li class="text-muted">anémie</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Minceur</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">ventre plat</li>
+                                                            <li class="text-muted">draineurs et détox</li>
+                                                            <li class="text-muted">coupe faim et satiété</li>
+                                                            <li class="text-muted">brûle graisse</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Confort</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">stress</li>
+                                                            <li class="text-muted">trouble de sommeil</li>
+                                                            <li class="text-muted">anxiété</li>
+                                                            <li class="text-muted">magnésium</li>
+                                                            <li class="text-muted">articulations</li>
+                                                            <li class="text-muted">fatigue</li>
+                                                            <li class="text-muted">anti-douleur</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-4">
+                                                    <!-- Row 2 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Fertilité</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">fertilité homme</li>
+                                                            <li class="text-muted">fertilité femme</li>
+                                                        </ul>
+                                                        <span class="fw-semibold text-dark fs-6 mt-4">Anti-âge</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">peau</li>
+                                                            <li class="text-muted">yeux</li>
+                                                            <li class="text-muted">anti Oxydant</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Ménopause</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Stimulants sexuels</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Prise de poids</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Bébé et enfant</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Beauté</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Anti-cellulite</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Mycoses Vaginales</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+                                        <!--**************************************************************************************-->
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="corpsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Hygiène
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="corpsDropdown" id="corpsDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -658px;">
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Puériculture</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">biberons</li>
+                                                                <li class="text-muted">tétines</li>
+                                                                <li class="text-muted">sucettes</li>
+                                                                <li class="text-muted">vaisselles de bébé</li>
+                                                                <li class="text-muted">anneaux de dentitions</li>
+                                                                <li class="text-muted">accessoires</li>
+                                                                <li class="text-muted">lunettes</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Toilette & soins bébé</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">toilette & bain de bébé</li>
+                                                                <li class="text-muted">Hygiène et soins du bébé</li>
+                                                                <li class="text-muted">hydratation visage et corps</li>
+                                                                <li class="text-muted">croûtes de lait</li>
+                                                                <li class="text-muted">massage et colique</li>
+                                                                <li class="text-muted">protection solaire</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Change de bébé</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">crème de change</li>
+                                                                <li class="text-muted">lingettes bébé</li>
+                                                                <li class="text-muted">couches</li>
+                                                                <li class="text-muted">soins du siège</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Maman</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">tests de grossesse</li>
+                                                                <li class="text-muted">allaitement</li>
+                                                                <li class="text-muted">compléments alimentaires</li>
+                                                                <li class="text-muted">anti vergetures</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Douche & bain</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">gel douche et savon liquide</li>
+                                                                <li class="text-muted">savon et pain</li>
+                                                                <li class="text-muted">bain (moussant, huile, sels, soins)</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins buccodentaires</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">brosses à dents</li>
+                                                                <li class="text-muted">brosses à dents enfants</li>
+                                                                <li class="text-muted">brosses à dents électriques</li>
+                                                                <li class="text-muted">dentifrices</li>
+                                                                <li class="text-muted">bain de bouche et solution gingivale</li>
+                                                                <li class="text-muted">fil dentaire, brossette & accessoires</li>
+                                                                <li class="text-muted">haleine</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Hygiène intime</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">toilette intime</li>
+                                                                <li class="text-muted">lingettes intimes</li>
+                                                                <li class="text-muted">serviettes hygiéniques et tampons</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Déodorants et anti-transpirants</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">déodorant aisselles</li>
+                                                                <li class="text-muted">déodorant pieds</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Nez et oreilles</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">hygiène nasale</li>
+                                                                <li class="text-muted">protection et nettoyage auriculaire</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Sexualité</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">préservatif</li>
+                                                                <li class="text-muted">lubrifiant</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Hygiène des mains</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">gels hydroalcooliques et antibactériens</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="corpsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Solaires
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="corpsDropdown" id="corpsDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -658px;">
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Crèmes solaires</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">protection inférieure à spf 20</li>
+                                                                <li class="text-muted">protection de spf 20 à 49</li>
+                                                                <li class="text-muted">protection supérieure à spf 50+</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Crèmes solaires enfant</span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Second Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Soins après-soleil</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Stick lèvres solaire</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Third Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Préparateurs solaires et autobronzant</span>
+
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Pack solaire</span>
+                                                        </div>
+
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Vichyanthelios</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="corpsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Bio & naturel
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="corpsDropdown" id="corpsDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -920px;">
+                                                <div class="row g-4">
+                                                    <!-- First Column -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Aromathéraphie</span>
+                                                            <ul class="list-unstyled ps-3">
+                                                                <li class="text-muted">huiles essentielles</li>
+                                                                <li class="text-muted">huiles végétales</li>
+                                                                <li class="text-muted">sérum</li>
+                                                                <li class="text-muted">diffuseurs, parfums d_ambiance</li>
+                                                                <li class="text-muted">hydrolat</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fw-semibold text-dark fs-6">Thés et tisanes</span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="santeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Matériel médical
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="santeDropdown" id="santeDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -1114px;">
+                                                <div class="row g-4">
+                                                    <!-- Row 1 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Alitement</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">couches adulte</li>
+                                                            <li class="text-muted">matelas</li>
+                                                            <li class="text-muted">pansements</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Appareils de mesure</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">glucomètres</li>
+                                                            <li class="text-muted">oxymètres de pouls</li>
+                                                            <li class="text-muted">pèses personnes</li>
+                                                            <li class="text-muted">tensiomètres</li>
+                                                            <li class="text-muted">thermomètre</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Mobilité</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">cannes</li>
+                                                            <li class="text-muted">fauteuils roulants</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-4">
+                                                    <!-- Row 2 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Aérosol</span>
+
+                                                        <span class="fw-semibold text-dark fs-6 mt-4">aide auditive</span>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Appareil de massage</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">orthopédie</span>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">PROTECTION DE L’OREILLE</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">Sport</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link fs-7" href="#" id="santeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Homme
+                                            </a>
+                                            <ul class="dropdown-menu shadow-lg bg-white border-0 rounded-3 p-4" aria-labelledby="santeDropdown" id="santeDropdownMenu" style="min-width: 1200px; border-radius: 10px; left: -1214px;">
+                                                <div class="row g-4">
+                                                    <!-- Row 1 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Cheveux homme</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">anti-pelliculaire</li>
+                                                            <li class="text-muted">Fortifiant et anti-chute</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Soin visage homme</span>
+                                                        <ul class="list-unstyled ps-3">
+                                                            <li class="text-muted">anti-âge et anti-fatigue homme</li>
+                                                            <li class="text-muted">nettoyants visage homme</li>
+                                                            <li class="text-muted">soins hydratants homme</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Crèmes solaires</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-4">
+                                                    <!-- Row 2 -->
+                                                    <div class="col-md-4">
+                                                        <span class="fw-semibold text-dark fs-6">Déodorant homme</span>
+
+                                                        <span class="fw-semibold text-dark fs-6 mt-4">Douche et bain homme</span>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-4">
+                                                            <span class="fw-semibold text-dark fs-6">rasage _ après-rasage</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="paste-button">
+                                                <button class="button">   <i class="fa fa-bars"></i>
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <a id="top" href="#"> Promos</a>
+                                                    <a id="middle" href="#"> Nouveautés</a>
+                                                    <a id="bottom" href="#">Bons Plans</a>
+                                                    <a id="bottom" href="#">Nos coffrets</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+<section class="product-section py-5">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Product Image Column -->
+            <div class="col-md-6"   id="col" data-product-imageUrl="{{ p.imageUrl }}" data-product-id="{{ p.id }}" data-product-title="{{ p.title }}" data-product-brand="{{ p.brand }}" data-product-price={{ p.price }} >
+                <div class="product-image position-relative overflow-hidden rounded shadow">
+                    <!-- Main Image -->
+                    <img src="{{ p.imageUrl }}" alt="{{ p.title }}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" />
+
+                    <!-- Promotion Badge -->
+                    <span class="badge bg-danger text-white position-absolute top-0 start-0 m-3">-30%</span>
+
+                    <!-- Wishlist Button -->
+                    <button type="button" class="btn btn-light border position-absolute top-0 end-0 m-3 rounded-circle p-2 wishlist-btn">
+                        <i class="bi bi-heart fs-5"></i>
+                    </button>
+                </div>
+
+                <!-- Thumbnail Images (Optional) -->
+                <div class="d-flex gap-2 mt-3">
+                    <img src="{{ p.imageUrl }}" alt="Thumbnail 1" class="img-thumbnail border-0" style="width: 80px; height: 80px; object-fit: cover;" />
+                    <img src="{{ p.imageUrl }}" alt="Thumbnail 2" class="img-thumbnail border-0" style="width: 80px; height: 80px; object-fit: cover;" />
+                    <img src="{{ p.imageUrl }}" alt="Thumbnail 3" class="img-thumbnail border-0" style="width: 80px; height: 80px; object-fit: cover;" />
+                </div>
+            </div>
+
+            <!-- Product Details Column -->
+            <div class="col-md-6">
+                <div class="product-details">
+                    <!-- Title -->
+                    <h2 class="fw-bold mb-3">{{ p.title }}</h2>
+
+                    <!-- Brand -->
+                    <p class="text-muted small mb-3"><i class="bi bi-building me-2"></i> {{ p.brand }}</p>
+
+                    <!-- Price -->
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="fs-4 fw-bold text-primary">{{ p.price }} TND</span>
+                        <del class="text-muted small">{{ p.originalPrice }} </del>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="d-flex align-items-center mb-4">
+    <span class="text-primary me-2"> <!-- Change color here -->
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+    </span>
+                        <span class="text-muted small">(4.5/5)</span>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="input-group product-qty ">
+                        <button type="button" class="quantity-left-minus btn btn-danger btn-number">-</button>
+                        <input type="number" id="quantity" name="quantity" class="form-control input-number quantity" value="1" min="1">
+                        <button type="button" class="quantity-right-plus btn btn-success btn-number">+</button>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button class="btn btn-primary add-to-cart">
+                        <i class="bi bi-cart-plus me-2"></i>
+                        Ajouter au panier
+                    </button>
+
+                    <!-- Description -->
+                    <p class="mb-3">Découvrez le Secret de la Beauté Naturelle avec notre Sérum Hydra-Radiance !
+
+                        Le Sérum Hydra-Radiance est conçu pour révéler l'éclat naturel de votre peau tout en la nourrissant en profondeur. Enrichi en actifs botaniques puissants, comme l'huile d'argan biologique, l'extrait d'aloe vera, et la vitamine E, ce sérum hydrate intensément, réduit les signes de fatigue, et améliore l'élasticité de votre peau.
+                        Hydratation Longue Durée : Une formule légère qui pénètre rapidement sans laisser de film gras.
+                        Anti-Âge Naturel : Réduit visiblement les rides et ridules grâce à ses propriétés antioxydantes.
+                        Peau Plus Lisse et Radieuse : Résultats visibles après seulement 2 semaines d'utilisation régulière.
+                        Convient à Tous Types de Peau : Hypoallergénique et testé dermatologiquement pour garantir une tolérance optimale.
+                        Utilisez-le matin et soir après votre nettoyant habituel pour une routine beauté complète. Avec sa texture non collante et son parfum délicatement floral, ce sérum deviendra vite votre allié quotidien pour une peau saine et rayonnante.
+                        Offrez-vous une peau éclatante dès aujourd'hui !</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Social Media Links -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-social">
+                                <ul class="social-links list-unstyled d-flex gap-3">
+                                    <img src="{{ asset('images/SEASIDECAREtest.png') }}" alt="post"  style="width:250px ; height: auto" >
+
+
+                                </ul>
+
+                                <p>seasidecare.shop.com est la parapharmacie en ligne numéro 1 en Tunisie. Découvrez une large gamme de produits parapharmaceutiques, allant de la beauté à la santé, en passant par le bien-être et la minceur, directement depuis chez vous.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pharma-Shop Info -->
+                        <div class="col-md-2 col-sm-6">
+                            <div class="footer-menu">
+
+                            </div>
+                        </div>
+
+                        <!-- Information Section -->
+                        <div class="col-md-2 col-sm-6">
+                            <div class="footer-menu">
+                                <h5 class="footer-title">Informations</h5>
+                                </br>
+                                <ul class="menu-list list-unstyled">
+                                    <li><a href="#">Promotions</a></li>
+                                    <li><a href="#">Nouveaux produits</a></li>
+                                    <li><a href="#">Meilleures ventes</a></li>
+                                    <li><a href="#">Contactez-nous</a></li>
+                                    <li><a href="#">Conditions d'utilisation</a></li>
+                                    <li><a href="#">A propos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Account Section -->
+                        <div class="col-md-2 col-sm-6">
+                            <div class="footer-menu">
+                                <h5 class="footer-title">Mon Compte</h5>
+                                </br>
+                                <ul class="menu-list list-unstyled">
+                                    <li><a href="#">Mon compte</a></li>
+                                    <li><a href="#">Mes commandes</a></li>
+                                    <li><a href="#">Mes avoirs</a></li>
+                                    <li><a href="#">Mes adresses</a></li>
+                                    <li><a href="#">Mes informations personnelles</a></li>
+                                    <li><a href="#">Mes bons de réduction</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Customer Service Section -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-subscribe">
+                                <h5 class="footer-title">Service Client</h5>
+                                </br>
+                                <p>Tél: <span style="color:limegreen "></br> +216 24 006 483 </span></p>
+                                <p>Email: <a href="mailto:contact@pharma-shop.tn" style="color:limegreen " ></br>contact@seasidecare.shop</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+<div id="footer-bottom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 copyright">
+                <p>© 2025 Dasiformatique. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 credit-link text-start text-md-end">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="{{ asset('js/plugins.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+
+<script>
+    // Récupérer les articles du panier depuis localStorage
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsList = document.getElementById('cart-items-list-1');
+    const totalPriceElement = document.getElementById('total-price');
+    const cartBadge = document.getElementById('cart-badge');
+    let totalPrice = 0;
+    let totalQuantity = 0;
+
+    // Calculer le prix total et ajouter les articles à la liste
+    cartItems.forEach(item => {
+        totalQuantity += item.quantity;
+        totalPrice += item.quantity * item.price;
+
+        let listItem = document.createElement('li');
+        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between');
+        listItem.innerHTML = `
+      <div>
+        <strong>${item.title}</strong>
+        <span class="d-block text-muted">Quantité: ${item.quantity}</span>
+      </div>
+      <span>${(item.quantity * item.price).toFixed(2)} TND</span>
+    `;
+        cartItemsList.appendChild(listItem);
+    });
+
+    // Afficher le prix total et la quantité totale
+    totalPriceElement.textContent = `${totalPrice.toFixed(2)} TND`;
+    cartBadge.textContent = totalQuantity;
+
+    // Finaliser l'achat : redirection vers la page de paiement ou une autre action
+    document.getElementById('checkout-button').addEventListener('click', function () {
+        alert('Processus de paiement lancé.');
+    });
+
+    // Gestion du bouton "Vider le panier"
+    document.getElementById('clear-cart').addEventListener('click', function () {
+        localStorage.removeItem('cart');
+        cartItemsList.innerHTML = ''; // Vider la liste
+        totalPriceElement.textContent = '0 TND'; // Réinitialiser le total
+        cartBadge.textContent = '0'; // Réinitialiser le badge
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsList = document.getElementById('cart-items-list');
+        let subtotal = 0;
+
+        if (cartItemsList === null) {
+            console.error("Élément avec l'ID 'cart-items-list' introuvable !");
+            return;
+        }
+
+        if (cartItems.length === 0) {
+            cartItemsList.innerHTML = '<li>Aucun produit dans votre panier.</li>';
+            document.getElementById('subtotal').textContent = "0.00 TND";
+            document.getElementById('total').textContent = "0.00 TND";
+            return;
+        }
+
+        // Affichage des articles du panier
+        cartItems.forEach(item => {
+            let listItem = document.createElement('li');
+            listItem.innerHTML = `<span> <img src="${item.image}" width="50"></span>
+                            <span>${item.title}</span>
+                            <span>${(item.quantity * item.price).toFixed(2)} TND</span>`;
+            cartItemsList.appendChild(listItem);
+            subtotal += item.quantity * item.price;
+        });
+
+        document.getElementById('subtotal').textContent = `${subtotal.toFixed(2)} TND`;
+        document.getElementById('total').textContent = `${subtotal.toFixed(2)} TND`;
+
+        // Gestion du bouton "Commander"
+        document.getElementById('place-order-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Récupération des données du formulaire
+            const firstName = document.getElementById('first_name').value.trim();
+            const lastName = document.getElementById('last_name').value.trim();
+            const country = document.getElementById('country').value;
+            const address = document.getElementById('street_address').value.trim();
+            const postcode = document.getElementById('postcode').value.trim();
+            const city = document.getElementById('city').value.trim();
+            const phoneNumber = document.getElementById('phone_number').value.trim();
+            const email = document.getElementById('email_address').value.trim();
+
+            // Vérification des champs obligatoires
+            if (!firstName || !lastName || !country || !address || !postcode || !city || !phoneNumber || !email) {
+                alert("Veuillez remplir tous les champs obligatoires.");
+                return;
+            }
+
+            // Vérification du format de l'email
+            if (!validateEmail(email)) {
+                alert("Veuillez entrer une adresse e-mail valide.");
+                return;
+            }
+
+            // Vérification du numéro de téléphone (exemple : 8 chiffres)
+            if (!/^\d{8}$/.test(phoneNumber)) {
+                alert("Veuillez entrer un numéro de téléphone valide (8 chiffres).");
+                return;
+            }
+
+            // Calcul du total avec taxe
+            const tax = calculateTax(subtotal);
+            const total = subtotal + tax;
+
+            // Envoi des données au serveur
+            fetch('place_order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    items: cartItems,
+                    subtotal: subtotal.toFixed(2),
+                    total: total.toFixed(2),
+                    customer: {
+                        firstName,
+                        lastName,
+                        country,
+                        address,
+                        postcode,
+                        city,
+                        phoneNumber,
+                        email
+                    }
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.redirect) {
+                        window.location.href = data.redirect;
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => console.error('Erreur :', error));
+        });
+
+        // Fonction de validation de l'email
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(email);
+        }
+
+        // Fonction de calcul de la taxe
+        function calculateTax(subtotal) {
+            const taxRate = 0.1;
+            return subtotal * taxRate;
+        }
+    });
+</script>
+
+</body>
+
+
+
+</html>
