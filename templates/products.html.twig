@@ -484,62 +484,92 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                 <ul class="d-flex justify-content-end list-unstyled m-0">
                     <!-- Trigger Button for Sign In -->
                     <li>
-                        <div class="compte text-end d-none d-lg-block px-5 ">
-                            <button class="border-0 bg-transparent d-flex align-items-center gap-2 px-1 py-2 rounded-3 " type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
-                                <i class="bi bi-person-circle fs-4 gap-2 lh-12" ></i>
-                                <span class="fw-medium">Mon Compte</span>
-                            </button>
+                        <div class="compte text-end d-none d-lg-block px-5">
+                            {% if app.session.get('username') %}
+                                <!-- Bouton qui déclenche la modale -->
+                                <button class="border-0 bg-transparent d-flex align-items-center gap-2 px-1 py-2 rounded-3"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#userModal">
+                                    <i class="bi bi-person-circle fs-4 gap-2 lh-12"></i>
+                                    <span class="fw-medium">{{ app.session.get('username') }}</span>
+                                </button>
+                            {% else %}
+                                <!-- Affiche le bouton login si pas connecté -->
+                                <button class="border-0 bg-transparent d-flex align-items-center gap-2 px-1 py-2 rounded-3"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+                                    <i class="bi bi-person-circle fs-4 gap-2 lh-12"></i>
+                                    <span class="fw-medium">Mon Compte</span>
+                                </button>
+                            {% endif %}
                         </div>
-
-                        {% if app.session.get('username') %}
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="d-flex align-items-center gap-2 bg-light px-3 py-2 rounded-3">
-                                    <i class="bi bi-person-check-fill text-primary"></i>
-                                    <span class="fw-semibold">{{ app.session.get('username') }}</span>
-                                </div>
-                                <a href="{{ path('app_logout') }}" class="btn btn-outline-danger d-flex align-items-center gap-2">
-                                    <i class="bi bi-box-arrow-right"></i>
-                                    <span>Déconnexion</span>
-                                </a>
-                            </div>
-                        {% endif %}
                     </li>
+
+                    <!-- Modal pour utilisateur connectee -->
+                    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content border-0 shadow-lg rounded-4">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="userModalLabel">Bonjour {{ app.session.get('username') }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column gap-3">
+                                    <a href="" class="btn btn-outline d-flex align-items-center gap-2">
+                                        <i class="bi bi-person-lines-fill"></i> Profil
+                                    </a>
+                                    <a href="{{ path('order_confirmation') }}" class="btn btn-outline d-flex align-items-center gap-2">
+                                        <i class="bi bi-card-list"></i> Mes commandes
+                                    </a>
+                                    <a href="{{ path('app_logout') }}" class="btn btn-outline d-flex align-items-center gap-2">
+                                        <i class="bi bi-box-arrow-right"></i> Déconnexion
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                     <!-- Sign In Modal -->
                     <div class="modal fade {% if app.request.get('showModal') %}show{% endif %}" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" {% if app.request.get('showModal') %}aria-hidden="false" style="display: block;"{% else %}aria-hidden="true" style="display: none;"{% endif %}>
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content shadow-lg">
+                                <div class="modal-header border-0 pb-0">
+                                    <h5 class="modal-title fs-4 fw-bold" id="signInModalLabel">bienvenue</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body pt-0">
                                     {% if app.request.get('showModal') %}
-                                        <div class="alert alert-danger">
+                                        <div class="alert alert-danger rounded-3">
                                             {{ app.request.get('showModal') }}
                                         </div>
                                     {% endif %}
-                                    <form action="/verif_log" method="post">
-                                        <div class="mb-3">
-                                            <label for="emailOrPhone" class="form-label">Adresse email</label>
-                                            <input type="text" name="email" class="form-control" id="emailOrPhone" placeholder="Entrez votre email" required>
+                                    <form action="/verif_log" method="post" class="needs-validation" novalidate>
+                                        <div class="mb-4">
+                                            <label for="emailOrPhone" class="form-label fw-medium">Adresse email</label>
+                                            <input type="email" name="email" class="form-control form-control-lg rounded-3" id="emailOrPhone" placeholder="Enter your email" required>
+                                            <div class="invalid-feedback">
+                                                Veuillez saisir une adresse e-mail valide
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+                                        <div class="mb-4">
+                                            <label for="password" class="form-label fw-medium">Mot de passe</label>
+                                            <input type="password" name="password" class="form-control form-control-lg rounded-3" id="password" placeholder="Enter your password" required>
+                                            <div class="invalid-feedback">
+                                                Veuillez entrer votre mot de passe
+                                            </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            Se connecter                    </button>
                                     </form>
-                                    <br>
-                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#createAccountModal">
-                                        créer un compte
-                                    </button>
+                                    <div class="text-center mt-3">
+                                        <p>Vous avez déjà un compte ?
+                                            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#createAccountModal" data-bs-dismiss="modal">Créer un compte</a>
+                                        </p>
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
                     <!-- Créer un compte Modal -->
                     <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
